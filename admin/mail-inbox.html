@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <title>TalentPath | Inbox (1)</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                            <i class="fa fa-map-signs"></i>
+                            <span>TalentPath</span>
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="app-search hidden-xs">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href="pages-404.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </form>
+                            </li>
+                            <li><a href="../careersite/index.html" target="_blank"><i class="fa fa-globe m-r-5"></i>Careers Site</a></li>
+                            <li>
+                                <a href="mail-inbox.html">
+                                    <i class="fa fa-envelope-o m-r-5"></i>
+                                    <span class="badge badge-xs badge-danger">1</span>
+                                </a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group nicescroll notification-list">
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-calendar-o noti-primary"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Interview Reminder</h5>
+                                                    <p class="m-0"><small>Interview at 11:00 am today</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="mail-inbox.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-envelope-o noti-warning"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">New Message</h5>
+                                                    <p class="m-0"><small>You have <span class="text-primary">1</span> new Message</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-success"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0"><small>Version 1.4.6 installed yesterday</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="pages-404.html" class="text-right"><small><b>See all notifications</b></small></a></li>
+                                </ul>
+                            </li>
+                            <li class="session dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect profile" id="user-dropdown-menu" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-caret">
+                                        <span class="caret-outer"></span>
+                                        <span class="caret-inner"></span>
+                                    </div>
+                                    <ul role="menu" aria-labelledby="user-dropdown-menu" aria-hidden="true">
+                                        <li class="current-user" role="presentation">
+                                            <a href="settings-profile.html">
+                                                <b class="fullname">David Williams</b>
+                                                <span class="screen-name hidden">@dwinch</span>
+                                                <small class="metadata">Administrator</small>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="settings-profile.html">View Profile</a></li>
+                                        <li><a href="settings-company.html">Edit Notifications</a></li>
+                                        <li><a href="account-lock.html">Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account-signin.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="jobs-list.html">Jobs</a></li>
+                            <li><a href="candidates-list.html">Candidates</a></li>
+                            <li><a href="pools-list.html">Talent Pools</a></li>
+                            <li><a href="events-calendar.html">Calendar</a></li>
+                            <li><a href="reports-sources.html">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page-header clearfix">
+                <ul class="nav nav-pills nav-pills-custom hidden-xs pull-right">
+                    <li class="active"><a href="mail-inbox.html">My Inbox</a></li>
+                    <li><a href="mail-inbox.html">Hiring Team Inbox</a></li>
+                </ul>
+                <ol class="breadcrumb">
+                    <li class="page-title">Messages</li>
+                    <li>Inbox</li>
+                </ol>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="m-t-20">
+                            <a href="mail-compose.html" class="btn btn-danger btn-custom btn-block waves-effect">
+                                <i class="fa fa-edit m-r-5"></i>Compose
+                            </a>
+                            <div class="list-group mail-list m-t-20">
+                                <a href="mail-inbox.html" class="list-group-item b-0 active">
+                                    <i class="fa fa-download m-r-10"></i>Inbox
+                                    <span class="label label-danger pull-right">1</span>
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <i class="fa fa-star-o m-r-10"></i>Starred
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <i class="fa fa-file-text-o m-r-10"></i>Draft
+                                    <span class="label label-info pull-right">6</span>
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <i class="fa fa-paper-plane-o m-r-10"></i>Sent Mail
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <i class="fa fa-trash-o m-r-10"></i>Trash
+                                    <span class="label label-default pull-right">354</span>
+                                </a>
+                            </div>
+                            <h3 class="panel-title m-t-40">Labels</h3>
+                            <div class="list-group b-0 mail-list">
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <span class="fa fa-circle text-info m-r-10"></span>New Applications
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <span class="fa fa-circle text-warning m-r-10"></span>Candidate Reviews
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <span class="fa fa-circle text-success m-r-10"></span>Top Rated
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <span class="fa fa-circle text-pink m-r-10"></span>Interviews
+                                </a>
+                                <a href="mail-inbox.html" class="list-group-item b-0">
+                                    <span class="fa fa-circle text-purple m-r-10"></span>Phone Screening
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="panel panel-default m-t-20">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-7">
+                                        <div class="btn-toolbar" role="toolbar">
+                                            <button type="button" class="btn btn-primary waves-effect">
+                                                <i class="fa fa-refresh"></i>
+                                            </button>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary waves-effect">
+                                                    <i class="fa fa-inbox"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-primary waves-effect">
+                                                    <i class="fa fa-exclamation-circle"></i>
+                                                </button>
+                                                <button type="button" class="btn btn-primary waves-effect">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </button>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-folder"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Inbox</a></li>
+                                                    <li><a href="#">Starred</a></li>
+                                                    <li><a href="#">Trash</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">New Folder</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-tag"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">New Applications</a></li>
+                                                    <li><a href="#">Candidate Reviews</a></li>
+                                                    <li><a href="#">Top Rated</a></li>
+                                                    <li><a href="#">Interviews</a></li>
+                                                    <li><a href="#">Phone Screening</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">New Label</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-primary waves-effect  dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                                    More <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="#">Mark as unread</a></li>
+                                                    <li><a href="#">Mark as read</a></li>
+                                                    <li><a href="#">Mark as favourite</a></li>
+                                                    <li><a href="#">Pin</a></li>
+                                                    <li><a href="#">Unpin</a></li>
+                                                    <li><a href="#">Flag</a></li>
+                                                    <li><a href="#">Unflag</a></li>
+                                                    <li><a href="#">Ignore</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">New Calendar Event</a></li>
+                                                    <li><a href="#">Print</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-5">
+                                        <ul class="pager pull-right m-0">
+                                            <li class="m-r-10">Showing 1 - 20 of 289</li>
+                                            <li>
+                                                <button type="button" class="btn btn-default waves-effect">
+                                                    <i class="fa fa-chevron-left"></i>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button type="button" class="btn btn-default waves-effect">
+                                                    <i class="fa fa-chevron-right"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-body p-0">
+                                <div class="table-responsive">
+                                    <table class="table table-hover mails m-0">
+                                        <tbody>
+                                            <tr class="unread">
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-warning"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Sam Larson</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Profile for Martin Estcourt - Hi David, please find attached</a>
+                                                </td>
+                                                <td style="width: 20px;">
+                                                    <i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="text-right">
+                                                    3:23 pm
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Craig Wight</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">New Business Analysts positions - Hi David, we are looking for 4 x</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    12:49 pm
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Robert Pugh</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">New Application - Dear Robert, Thank you for applying for the</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    11:37 am
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star text-warning m-r-15"></i>
+                                                    <i class="fa fa-circle m-l-5 text-success"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Teresa Walsh</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Resume as requested - Hi David, please find attached my resume</a>
+                                                </td>
+                                                <td style="width: 20px;">
+                                                    <i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="text-right">
+                                                    10:11 am
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-pink"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Steve Parks</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">New Interview Request - I am available tomorrow between 10:00</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    Yesterday
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-pink"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Sarah Knapp</a>
+                                                </td>
+
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">New Interview Request - Hi David, I'm going to add you to the</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    Yesterday
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star text-muted m-r-15"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Ryan Woods</a>
+                                                </td>
+
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Catch-up - Hope you are well, I wanted to get in contact as I am</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    29 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Jeremy Lewis</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Re: Contract Extension - Can you let me know either way as I want</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    29 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-info"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Sarah Knapp</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Please can you sign Duncan Thatcher's contract extension, Jeremy</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    29 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-purple"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Tom Woollard</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">New Application - Dear Tom, Thank you for applying for the position</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    29 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Jeremy Lewis</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Another possible - Not sure if this one is still on the table but he</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    28 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Andrew Graham</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Re: Peter Davis - Lets see how things go. Speak soon, regards</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    28 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Ben Goldin</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Interview feedback - Although George showed good experience</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    28 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-warning"></i>
+                                                    <i class="fa fa-circle m-l-5 text-warning"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Ben Goldin</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Candidate Reviews - Hi David, please can I ask you to review these</a>
+                                                </td>
+                                                <td style="width: 20px;">
+                                                    <i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="text-right">
+                                                    28 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-info"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Sarah Knapp</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Candidate Assessment - Here is the completed assessment from</a>
+                                                </td>
+                                                <td style="width: 20px;">
+                                                    <i class="fa fa-paperclip"></i>
+                                                </td>
+                                                <td class="text-right">
+                                                    28 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Will Clark</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">I had a think and I am sure we can connect on LinkedIn, although</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    28 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-purple"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Sam Larson</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">Re: Willem Wijans - He looks good on paper. Maybe worth having a</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    27 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-pink"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Steve Parks</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">New Interview Request - Let me know when you are free to talk this</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    27 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Tara Smith</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">A candidate that we have been working with is looking for a new</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    27 Jul
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="mail-select">
+                                                    <div class="checkbox checkbox-primary m-r-15">
+                                                        <input type="checkbox">
+                                                        <label></label>
+                                                    </div>
+                                                    <i class="fa fa-star m-r-15 text-muted"></i>
+                                                    <i class="fa fa-circle m-l-5 text-white"></i>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-name">Greg Neale</a>
+                                                </td>
+                                                <td>
+                                                    <a href="mail-read.html" class="email-msg">New Application - Dear Greg, Thank you for applying for the role of</a>
+                                                </td>
+                                                <td></td>
+                                                <td class="text-right">
+                                                    26 Jul
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                ©2016 TalentPath. All rights reserved.
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pull-right list-inline m-b-0">
+                                    <li>
+                                        <a href="pages-404.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Js Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+
+</html>

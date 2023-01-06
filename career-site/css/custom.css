@@ -1,0 +1,163 @@
+.home-wrapper ul {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    width: 80%;
+    margin: 30px auto 50px auto;
+}
+
+.home-wrapper li {
+    display: inline-block;
+    line-height: 24px;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.home-wrapper li i {
+    padding-right: 5px;
+}
+
+.breadcrumb {
+    background: #fff;
+    padding: 0;
+    margin: 40px 0;
+}
+
+.alted {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.description {
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.description p {
+    margin-bottom: 4px;
+    line-height: 1.8;
+}
+
+.apply {
+    text-align: center;
+}
+
+.content {
+    border-right: 1px solid #d8e3e7;
+    margin-bottom: 100px;
+}
+
+.sidebar {
+    margin-left: 10px;
+}
+
+.sidebar .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn-linkedin {
+    background: #0077B5;
+    border-radius: 50px;
+    color: #fff;
+    padding: 8px 20px;
+}
+
+.btn-linkedin:hover {
+    background: #005F92;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-linkedin i {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.form-component .apply-actions {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.form-component section {
+    padding-bottom: 20px;
+    padding-top: 0px;
+    border-bottom: 1px solid #d8e3e7;
+    overflow: hidden;
+}
+
+.form-component .description h3 {
+    color: #222933;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.form-component .description p {
+    font-size: 13px;
+}
+
+.form-component .form-group {
+    margin: 15px 0px 0px 0px;
+}
+
+.form-component .control-label {
+    margin: 0px 0 7px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-component .form-control {
+    background-color: transparent;
+    border: 2px solid #efefef;
+    height: 50px;
+    padding-left: 20px;
+    box-shadow: none !important;
+    margin-bottom: 10px;
+}
+
+.form-component .select-file {
+    border: 2px solid #efefef;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.form-component .question {
+    border-left: 1px solid #efefef;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-component .moreoptions {
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    float: left;
+}
+
+.form-component section.closing {
+    text-align: center;
+    border-bottom: none;
+}
+
+.form-component section.closing .btn {
+    margin: 20px 0;
+}
+
+.form-component .required-info {
+    padding-left: 20px;
+}
+
+.help-block {
+    color: #a0a9ac;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

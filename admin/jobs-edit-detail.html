@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <title>TalentPath | Job Edit (General Details)</title>
+        <link href="assets/plugins/summernote/dist/summernote.css" rel="stylesheet" />
+        <link href="assets/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet" />
+        <link href="assets/plugins/bootstrap-sweetalert/sweet-alert.css" rel="stylesheet" type="text/css">
+        <link href="assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                            <i class="fa fa-map-signs"></i>
+                            <span>TalentPath</span>
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="app-search hidden-xs">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href="pages-404.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </form>
+                            </li>
+                            <li><a href="../careersite/index.html" target="_blank"><i class="fa fa-globe m-r-5"></i>Careers Site</a></li>
+                            <li>
+                                <a href="mail-inbox.html">
+                                    <i class="fa fa-envelope-o m-r-5"></i>
+                                    <span class="badge badge-xs badge-danger">1</span>
+                                </a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group nicescroll notification-list">
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-calendar-o noti-primary"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Interview Reminder</h5>
+                                                    <p class="m-0"><small>Interview at 11:00 am today</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="mail-inbox.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-envelope-o noti-warning"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">New Message</h5>
+                                                    <p class="m-0"><small>You have <span class="text-primary">1</span> new Message</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-success"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0"><small>Version 1.4.6 installed yesterday</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="pages-404.html" class="text-right"><small><b>See all notifications</b></small></a></li>
+                                </ul>
+                            </li>
+                            <li class="session dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect profile" id="user-dropdown-menu" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-caret">
+                                        <span class="caret-outer"></span>
+                                        <span class="caret-inner"></span>
+                                    </div>
+                                    <ul role="menu" aria-labelledby="user-dropdown-menu" aria-hidden="true">
+                                        <li class="current-user" role="presentation">
+                                            <a href="settings-profile.html">
+                                                <b class="fullname">David Williams</b>
+                                                <span class="screen-name hidden">@dwinch</span>
+                                                <small class="metadata">Administrator</small>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="settings-profile.html">View Profile</a></li>
+                                        <li><a href="settings-company.html">Edit Notifications</a></li>
+                                        <li><a href="account-lock.html">Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account-signin.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li class="has-submenu active"><a href="jobs-list.html">Jobs</a></li>
+                            <li><a href="candidates-list.html">Candidates</a></li>
+                            <li><a href="pools-list.html">Talent Pools</a></li>
+                            <li><a href="events-calendar.html">Calendar</a></li>
+                            <li><a href="reports-sources.html">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page-header clearfix">
+                <div class="pull-right">
+                    <a href="jobs-detail-pipeline.html" class="btn btn-link">View Candidates</a>
+                    <button class="btn btn-danger btn-custom waves-effect">
+                        <i class="fa fa-times m-r-5"></i>Unpublish and Use Internally
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-custom dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog m-r-5"></i>
+                            <b class="caret"></b>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="jobs-detail-pipeline.html">View</a></li>
+                            <li><a href="#">Remove Bookmark</a></li>
+                            <li><a href="#">Refer Candidates</a></li>
+                            <li><a href="#">Upload Candidates</a></li>
+                            <li><a href="#">View Reports</a></li>
+                            <li><a href="#">Copy Job</a></li>
+                            <li><a href="#">Archive</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="page-title">Jobs</li>
+                    <li><a href="jobs-list.html">All published</a></li>
+                    <li>Finance & Commercial Manager</li>
+                </ol>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs nav-justified navtab-border navtab-primary noshadow">
+                            <li class="tab active">
+                                <a href="jobs-edit-detail.html">General Details</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-application.html">Application Form</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-pipeline.html">Hiring Pipeline</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-interviews-empty.html">Interview Kit</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-team.html">Team Members</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-share.html">Your Network</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-promote.html">Promote</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="job-details">
+                                <form action="/" method="post" role="form">
+                                    <h4 class="header-title">Finance & Commercial Manager</h4>
+                                    <p class="text-muted m-b-20 font-13">
+                                        Fill out all the job details e.g. job title, location, job description and requirements. Remember that this is the first contact between you and your potential hires. The more specific you are, the easier the right candidates can find you.
+                                    </p>
+                                    <div class="form-controls">
+                                        <div class="row">
+                                            <div class="col-md-8">
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-8">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="job-title">Job Title <span class="text-danger">*</span></label>
+                                                            <input type="input" class="form-control" id="job-title" placeholder="Enter job title" value="Finance & Commercial Manager">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="job-function">Function</label>
+                                                            <select class="form-control" id="job-function">
+                                                                <option value="0">-- Please choose --</option>
+                                                                <option value="1">Clinical</option>
+                                                                <option value="2" selected="selected">Non-Clinical</option>
+                                                                <option value="3">Operational Support</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="job-location-country">Country <span class="text-danger">*</span></label>
+                                                            <select class="form-control" id="job-location-country">
+                                                                <option value="0">-- Please choose --</option>
+                                                                <option value="35">Afghanistan</option>
+                                                                <option value="47">Åland Islands</option>
+                                                                <option value="38">Albania</option>
+                                                                <option value="88">Algeria</option>
+                                                                <option value="44">American Samoa</option>
+                                                                <option value="33">Andorra</option>
+                                                                <option value="41">Angola</option>
+                                                                <option value="37">Anguilla</option>
+                                                                <option value="42">Antarctica</option>
+                                                                <option value="36">Antigua and Barbuda</option>
+                                                                <option value="43">Argentina</option>
+                                                                <option value="39">Armenia</option>
+                                                                <option value="46">Aruba</option>
+                                                                <option value="45">Australia</option>
+                                                                <option value="20">Austria</option>
+                                                                <option value="48">Azerbaijan</option>
+                                                                <option value="62">Bahamas</option>
+                                                                <option value="53">Bahrain</option>
+                                                                <option value="51">Bangladesh</option>
+                                                                <option value="50">Barbados</option>
+                                                                <option value="66">Belarus</option>
+                                                                <option value="3">Belgium</option>
+                                                                <option value="67">Belize</option>
+                                                                <option value="55">Benin</option>
+                                                                <option value="57">Bermuda</option>
+                                                                <option value="63">Bhutan</option>
+                                                                <option value="59">Bolivia</option>
+                                                                <option value="60">Bonaire, Saint Eustatius and Saba</option>
+                                                                <option value="49">Bosnia and Herzegovina</option>
+                                                                <option value="65">Botswana</option>
+                                                                <option value="64">Bouvet Island</option>
+                                                                <option value="61">Brazil</option>
+                                                                <option value="124">British Indian Ocean Territory</option>
+                                                                <option value="245">British Virgin Islands</option>
+                                                                <option value="58">Brunei</option>
+                                                                <option value="4">Bulgaria</option>
+                                                                <option value="52">Burkina Faso</option>
+                                                                <option value="54">Burundi</option>
+                                                                <option value="133">Cambodia</option>
+                                                                <option value="76">Cameroon</option>
+                                                                <option value="68">Canada</option>
+                                                                <option value="81">Cape Verde</option>
+                                                                <option value="140">Cayman Islands</option>
+                                                                <option value="71">Central African Republic</option>
+                                                                <option value="222">Chad</option>
+                                                                <option value="75">Chile</option>
+                                                                <option value="77">China</option>
+                                                                <option value="83">Christmas Island</option>
+                                                                <option value="69">Cocos [Keeling] Islands</option>
+                                                                <option value="78">Colombia</option>
+                                                                <option value="135">Comoros</option>
+                                                                <option value="70">Congo [DRC]</option>
+                                                                <option value="72">Congo [Republic]</option>
+                                                                <option value="74">Cook Islands</option>
+                                                                <option value="79">Costa Rica</option>
+                                                                <option value="15">Croatia</option>
+                                                                <option value="80">Cuba</option>
+                                                                <option value="82">Curacao</option>
+                                                                <option value="84">Cyprus</option>
+                                                                <option value="28">Czech Republic</option>
+                                                                <option value="5">Denmark</option>
+                                                                <option value="85">Djibouti</option>
+                                                                <option value="86">Dominica</option>
+                                                                <option value="87">Dominican Republic</option>
+                                                                <option value="228">East Timor</option>
+                                                                <option value="89">Ecuador</option>
+                                                                <option value="91">Egypt</option>
+                                                                <option value="217">El Salvador</option>
+                                                                <option value="110">Equatorial Guinea</option>
+                                                                <option value="93">Eritrea</option>
+                                                                <option value="90">Estonia</option>
+                                                                <option value="94">Ethiopia</option>
+                                                                <option value="96">Falkland Islands</option>
+                                                                <option value="98">Faroe Islands</option>
+                                                                <option value="95">Fiji</option>
+                                                                <option value="7">Finland</option>
+                                                                <option value="8">France</option>
+                                                                <option value="102">French Guiana</option>
+                                                                <option value="188">French Polynesia</option>
+                                                                <option value="223">French Southern Territories</option>
+                                                                <option value="99">Gabon</option>
+                                                                <option value="107">Gambia</option>
+                                                                <option value="101">Georgia</option>
+                                                                <option value="6">Germany</option>
+                                                                <option value="104">Ghana</option>
+                                                                <option value="105">Gibraltar</option>
+                                                                <option value="9">Greece</option>
+                                                                <option value="106">Greenland</option>
+                                                                <option value="100">Grenada</option>
+                                                                <option value="109">Guadeloupe</option>
+                                                                <option value="113">Guam</option>
+                                                                <option value="112">Guatemala</option>
+                                                                <option value="103">Guernsey</option>
+                                                                <option value="108">Guinea</option>
+                                                                <option value="114">Guinea-Bissau</option>
+                                                                <option value="115">Guyana</option>
+                                                                <option value="119">Haiti</option>
+                                                                <option value="117">Heard Island and McDonald Islands</option>
+                                                                <option value="118">Honduras</option>
+                                                                <option value="116">Hong Kong</option>
+                                                                <option value="11">Hungary</option>
+                                                                <option value="13">Iceland</option>
+                                                                <option value="123">India</option>
+                                                                <option value="120">Indonesia</option>
+                                                                <option value="126">Iran</option>
+                                                                <option value="125">Iraq</option>
+                                                                <option value="12">Ireland</option>
+                                                                <option value="122">Isle of Man</option>
+                                                                <option value="121">Israel</option>
+                                                                <option value="14">Italy</option>
+                                                                <option value="73">Ivory Coast</option>
+                                                                <option value="128">Jamaica</option>
+                                                                <option value="130">Japan</option>
+                                                                <option value="127">Jersey</option>
+                                                                <option value="129">Jordan</option>
+                                                                <option value="141">Kazakhstan</option>
+                                                                <option value="131">Kenya</option>
+                                                                <option value="134">Kiribati</option>
+                                                                <option value="251">Kosovo</option>
+                                                                <option value="139">Kuwait</option>
+                                                                <option value="132">Kyrgyzstan</option>
+                                                                <option value="142">Laos</option>
+                                                                <option value="150">Latvia</option>
+                                                                <option value="143">Lebanon</option>
+                                                                <option value="148">Lesotho</option>
+                                                                <option value="147">Liberia</option>
+                                                                <option value="151">Libya</option>
+                                                                <option value="145">Liechtenstein</option>
+                                                                <option value="149">Lithuania</option>
+                                                                <option value="16">Luxembourg</option>
+                                                                <option value="163">Macau</option>
+                                                                <option value="159">Macedonia</option>
+                                                                <option value="157">Madagascar</option>
+                                                                <option value="171">Malawi</option>
+                                                                <option value="173">Malaysia</option>
+                                                                <option value="170">Maldives</option>
+                                                                <option value="160">Mali</option>
+                                                                <option value="168">Malta</option>
+                                                                <option value="158">Marshall Islands</option>
+                                                                <option value="165">Martinique</option>
+                                                                <option value="166">Mauritania</option>
+                                                                <option value="169">Mauritius</option>
+                                                                <option value="253">Mayotte</option>
+                                                                <option value="172">Mexico</option>
+                                                                <option value="97">Micronesia</option>
+                                                                <option value="154">Moldova</option>
+                                                                <option value="153">Monaco</option>
+                                                                <option value="162">Mongolia</option>
+                                                                <option value="155">Montenegro</option>
+                                                                <option value="167">Montserrat</option>
+                                                                <option value="152">Morocco</option>
+                                                                <option value="174">Mozambique</option>
+                                                                <option value="161">Myanmar [Burma]</option>
+                                                                <option value="175">Namibia</option>
+                                                                <option value="182">Nauru</option>
+                                                                <option value="181">Nepal</option>
+                                                                <option value="17">Netherlands</option>
+                                                                <option value="40">Netherlands Antilles</option>
+                                                                <option value="176">New Caledonia</option>
+                                                                <option value="184">New Zealand</option>
+                                                                <option value="180">Nicaragua</option>
+                                                                <option value="177">Niger</option>
+                                                                <option value="179">Nigeria</option>
+                                                                <option value="183">Niue</option>
+                                                                <option value="178">Norfolk Island</option>
+                                                                <option value="137">North Korea</option>
+                                                                <option value="164">Northern Mariana Islands</option>
+                                                                <option value="19">Norway</option>
+                                                                <option value="185">Oman</option>
+                                                                <option value="191">Pakistan</option>
+                                                                <option value="196">Palau</option>
+                                                                <option value="195">Palestinian Territories</option>
+                                                                <option value="186">Panama</option>
+                                                                <option value="189">Papua New Guinea</option>
+                                                                <option value="197">Paraguay</option>
+                                                                <option value="187">Peru</option>
+                                                                <option value="190">Philippines</option>
+                                                                <option value="193">Pitcairn Islands</option>
+                                                                <option value="21">Poland</option>
+                                                                <option value="22">Portugal</option>
+                                                                <option value="194">Puerto Rico</option>
+                                                                <option value="198">Qatar</option>
+                                                                <option value="199">Réunion</option>
+                                                                <option value="23">Romania</option>
+                                                                <option value="201">Russia</option>
+                                                                <option value="202">Rwanda</option>
+                                                                <option value="56">Saint Barthélemy</option>
+                                                                <option value="208">Saint Helena</option>
+                                                                <option value="136">Saint Kitts and Nevis</option>
+                                                                <option value="144">Saint Lucia</option>
+                                                                <option value="156">Saint Martin</option>
+                                                                <option value="192">Saint Pierre and Miquelon</option>
+                                                                <option value="243">Saint Vincent and the Grenadines</option>
+                                                                <option value="250">Samoa</option>
+                                                                <option value="211">San Marino</option>
+                                                                <option value="216">São Tomé and Príncipe</option>
+                                                                <option value="203">Saudi Arabia</option>
+                                                                <option value="212">Senegal</option>
+                                                                <option value="200">Serbia</option>
+                                                                <option value="24">Serbia and Montenegro</option>
+                                                                <option value="205">Seychelles</option>
+                                                                <option value="210">Sierra Leone</option>
+                                                                <option value="207">Singapore</option>
+                                                                <option value="218">Sint Maarten</option>
+                                                                <option value="26">Slovakia</option>
+                                                                <option value="25">Slovenia</option>
+                                                                <option value="204">Solomon Islands</option>
+                                                                <option value="213">Somalia</option>
+                                                                <option value="254">South Africa</option>
+                                                                <option value="111">South Georgia and the South Sandwich Islands</option>
+                                                                <option value="138">South Korea</option>
+                                                                <option value="215">South Sudan</option>
+                                                                <option value="27">Spain</option>
+                                                                <option value="146">Sri Lanka</option>
+                                                                <option value="206">Sudan</option>
+                                                                <option value="214">Suriname</option>
+                                                                <option value="209">Svalbard and Jan Mayen</option>
+                                                                <option value="220">Swaziland</option>
+                                                                <option value="30">Sweden</option>
+                                                                <option value="31">Switzerland</option>
+                                                                <option value="219">Syria</option>
+                                                                <option value="235">Taiwan</option>
+                                                                <option value="226">Tajikistan</option>
+                                                                <option value="236">Tanzania</option>
+                                                                <option value="225">Thailand</option>
+                                                                <option value="224">Togo</option>
+                                                                <option value="227">Tokelau</option>
+                                                                <option value="231">Tonga</option>
+                                                                <option value="233">Trinidad and Tobago</option>
+                                                                <option value="230">Tunisia</option>
+                                                                <option value="232">Turkey</option>
+                                                                <option value="229">Turkmenistan</option>
+                                                                <option value="221">Turks and Caicos Islands</option>
+                                                                <option value="234">Tuvalu</option>
+                                                                <option value="239">U.S. Minor Outlying Islands</option>
+                                                                <option value="246">U.S. Virgin Islands</option>
+                                                                <option value="238">Uganda</option>
+                                                                <option value="237">Ukraine</option>
+                                                                <option value="34">United Arab Emirates</option>
+                                                                <option value="10" selected="selected">United Kingdom</option>
+                                                                <option value="32">United States</option>
+                                                                <option value="240">Uruguay</option>
+                                                                <option value="241">Uzbekistan</option>
+                                                                <option value="248">Vanuatu</option>
+                                                                <option value="242">Vatican City</option>
+                                                                <option value="244">Venezuela</option>
+                                                                <option value="247">Vietnam</option>
+                                                                <option value="249">Wallis and Futuna</option>
+                                                                <option value="92">Western Sahara</option>
+                                                                <option value="252">Yemen</option>
+                                                                <option value="255">Zambia</option>
+                                                                <option value="256">Zimbabwe</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="job-location-region">Region <span class="text-danger">*</span></label>
+                                                            <input type="input" class="form-control" id="job-location-region" placeholder="Enter state or county" value="South East">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="job-location-city">City or town <span class="text-danger">*</span></label>
+                                                            <input type="input" class="form-control" id="job-location-city" placeholder="Enter city or town" value="Farnham">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="job-location-zipcode">ZIP code</label>
+                                                            <input type="input" class="form-control" id="job-location-zipcode" placeholder="Enter state or county" value="GU10 5XX">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-6">
+                                                        <p>
+                                                            <input type="checkbox" class="switch" id="signature-switch" data-size="mini" data-on-color="success" data-off-color="default" />
+                                                            <label class="m-l-10 not-bold">Remote Job / Telecommute</label>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-md-6 text-right">
+                                                        <p><span class="text-danger">*</span><em>required fields</em></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row m-t-20">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label class="control-label" for="job-description" class="control-label">Job Description <span class="text-danger">*</span></label>
+                                                            <div class="m-t-20">
+                                                                <div id="job-description" class="summernote"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card-box secondary-form">
+                                                    <h4 class="header-title">Secondary Information (Optional)</h4>
+                                                    <div class="form-group m-t-20">
+                                                        <label class="control-label" for="job-contract-type">Contract</label>
+                                                        <select class="form-control" id="job-contract-type">
+                                                            <option value="0">-- Please choose --</option>
+                                                            <option value="1" selected="selected">Full-time</option>
+                                                            <option value="2">Part-time</option>
+                                                            <option value="3">Contract</option>
+                                                            <option value="4">Temporary</option>
+                                                            <option value="5">Other</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group m-t-20">
+                                                        <label class="control-label" for="job-industry">Industry</label>
+                                                        <select class="form-control" id="job-industry">
+                                                            <option value="0">-- Please choose --</option>
+                                                            <option value="47">Accountancy, Controlling, Tax</option>
+                                                            <option value="69">Administration - Data entry</option>
+                                                            <option value="31">Administration - Finance</option>
+                                                            <option value="22">Advice, Consultancy</option>
+                                                            <option value="2">Agriculture</option>
+                                                            <option value="66">Animal Care</option>
+                                                            <option value="57">Art, Culture</option>
+                                                            <option value="6">Banking, Insurance</option>
+                                                            <option value="74">Charity, Fundraising</option>
+                                                            <option value="62">Cleaning, Home Care</option>
+                                                            <option value="27">Communications, PR</option>
+                                                            <option value="23">Construction - Architecture</option>
+                                                            <option value="4">Construction - Civil Engineering</option>
+                                                            <option value="59">Construction - Engineering</option>
+                                                            <option value="24">Construction - Work preparation, Engineering</option>
+                                                            <option value="10">E-Commerce, Search Engine Marketing</option>
+                                                            <option value="13">Education, Coaching, Trainers</option>
+                                                            <option value="44">Engineering - Design</option>
+                                                            <option value="60">Engineering - Engineering</option>
+                                                            <option value="16">Engineering - Execution</option>
+                                                            <option value="45">Engineering - Work Preparation</option>
+                                                            <option value="29">Facility Management</option>
+                                                            <option value="51">Fashion, Styling, Cosmetics</option>
+                                                            <option value="33" selected="selected">Financial - Business Administration, Financial Management</option>
+                                                            <option value="63">Graphics - Design, DTP</option>
+                                                            <option value="53">Graphics - Printing</option>
+                                                            <option value="75">Health Care - Children (Day Care)</option>
+                                                            <option value="17">Health Care - Doctors, Surgeons</option>
+                                                            <option value="64">Health Care - Mental</option>
+                                                            <option value="67">Health Care - Physical</option>
+                                                            <option value="8">Hospitality, Tourism, Recreation</option>
+                                                            <option value="41">Human Resources</option>
+                                                            <option value="35">IT - Hardware, Network</option>
+                                                            <option value="36">IT - Services, Support</option>
+                                                            <option value="37">IT - Software Development</option>
+                                                            <option value="61">Journalism, Editorial, Copywriting</option>
+                                                            <option value="40">Laboratory</option>
+                                                            <option value="56">Land Management, Planning</option>
+                                                            <option value="11">Legal</option>
+                                                            <option value="12">Logistics - Inventory, Warehouse, Drivers</option>
+                                                            <option value="39">Logistics - Procurement, Supply chain</option>
+                                                            <option value="52">Maritime</option>
+                                                            <option value="15">Marketing</option>
+                                                            <option value="68">Payroll administration</option>
+                                                            <option value="73">Pharmacy</option>
+                                                            <option value="77">Pilot</option>
+                                                            <option value="72">Politics, Policies</option>
+                                                            <option value="9">Production (Operators)</option>
+                                                            <option value="49">Project Management</option>
+                                                            <option value="71">Public Housing</option>
+                                                            <option value="55">Quality, Health, Environment, Safety</option>
+                                                            <option value="78">Radio and Television</option>
+                                                            <option value="30">Real Estate</option>
+                                                            <option value="3">Recruitment</option>
+                                                            <option value="5">Sales - Account Management</option>
+                                                            <option value="26">Sales - Office Staff, Telesales, Call Centre</option>
+                                                            <option value="7">Sales - Retail</option>
+                                                            <option value="48">Sales - Support, Helpdesk</option>
+                                                            <option value="70">Sales - Business Development</option>
+                                                            <option value="65">Science, Research and Development</option>
+                                                            <option value="1">Secretarial, Office Management, Personal Assistant</option>
+                                                            <option value="21">Security</option>
+                                                            <option value="28">Senior Management, Board</option>
+                                                            <option value="58">Social Work</option>
+                                                            <option value="46">Sport</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group m-t-20">
+                                                        <label class="control-label" for="job-experience-level">Experience</label>
+                                                        <select class="form-control" id="job-experience-level">
+                                                            <option value="0">-- Please choose --</option>
+                                                            <option value="1">Not Applicable</option>
+                                                            <option value="2">Entry Level, Graduate</option>
+                                                            <option value="3">Associate</option>
+                                                            <option value="4">Mid-Level</option>
+                                                            <option value="5" selected="selected">Senior Management</option>
+                                                            <option value="6">Director</option>
+                                                            <option value="7">Executive</option>
+                                                            <option value="8">Board Member</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group m-t-20">
+                                                        <label class="control-label" for="job-salary">Salary</label>
+                                                        <div class="form-inline" id="job-salary">
+                                                            <input type="input" class="form-control one-third m-r-10" placeholder="Enter min salary" value="70,000"><small class="text-muted">to</small>
+                                                            <input type="input" class="form-control one-third m-l-10 m-r-10" placeholder="Enter max salary" value="75,000">
+                                                            <small class="text-muted">per year</small>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group m-t-20">
+                                                        <label class="control-label" for="job-currency-code">Currency</label>
+                                                        <select class="form-control" id="job-currency-code">
+                                                            <option value="0">-- Please choose --</option>
+                                                            <option value="1">Australian Dollar</option>
+                                                            <option value="2">Brazilian Real </option>
+                                                            <option value="3" selected="selected">British Pound</option>
+                                                            <option value="4">Canadian Dollar</option>
+                                                            <option value="5">Czech Koruna</option>
+                                                            <option value="6">Danish Krone</option>
+                                                            <option value="7">Euro</option>
+                                                            <option value="8">Hong Kong Dollar</option>
+                                                            <option value="9">Hungarian Forint </option>
+                                                            <option value="10">Israeli New Sheqel</option>
+                                                            <option value="11">Japanese Yen</option>
+                                                            <option value="12">Malaysian Ringgit</option>
+                                                            <option value="13">Mexican Peso</option>
+                                                            <option value="14">Norwegian Krone</option>
+                                                            <option value="15">New Zealand Dollar</option>
+                                                            <option value="16">Philippine Peso</option>
+                                                            <option value="17">Polish Zloty</option>
+                                                            <option value="18">Singapore Dollar</option>
+                                                            <option value="19">Swedish Krona</option>
+                                                            <option value="20">Swiss Franc</option>
+                                                            <option value="21">Taiwan New Dollar</option>
+                                                            <option value="22">Thai Baht</option>
+                                                            <option value="23">Turkish Lira</option>
+                                                            <option value="24">U.S. Dollar</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group m-t-20">
+                                                        <label class="control-label" for="job-skills">Skills</label>
+                                                        <input type="text" class="form-control" id="job-skills" value="Qualified Accountant,SAP,Communication Skills" data-role="tagsinput" />
+                                                        <span class="help-block text-muted"><small>Add skills but please note, only the first 5 will be used when a candidate searches for a job.</small></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="button" id="sa-save" class="btn btn-primary waves-effect">Save Changes</button>
+                                        <button type="button" class="btn btn-link">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                ©2016 TalentPath. All rights reserved.
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pull-right list-inline m-b-0">
+                                    <li>
+                                        <a href="pages-404.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- Js Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/plugins/summernote/dist/summernote.min.js"></script>
+        <script src="assets/plugins/bootstrap-switch/dist/js/bootstrap-switch.js"></script>
+        <script src="assets/plugins/bootstrap-sweetalert/sweet-alert.min.js"></script>
+        <script src="assets/pages/jquery.sweet-alert.init.js"></script>
+        <script src="assets/plugins/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+
+                var markup = "<p><strong>About us</strong></p>" +
+                    "<p>Clare Park Hospital is set in an area of outstanding natural beauty, based near Farnham, Surrey. It has excellent facilities and is staffed by a team of highly skilled professionals. We offer a wide range of medical and surgical treatments supporting patients in the surrounding four counties.</p>" +
+                    "<p><strong>The role</strong></p>" +
+                    "<p>Clare Park Hospital is currently looking for an experienced and high-calibre Finance and Commercial Manager to support the Hospital Director and Senior Management Team on a full time basis, 37.5 hours per week.</p>" +
+                    "<p><strong>Responsibilities</strong></p>" +
+                    "<ul>" +
+                    "<li>Provide clear financial leadership and commercial support including month-end management accounts, developing the annual budgets and preparing the financials for the 2017-2019 Hospital Three-Year plan.</li>" +
+                    "<li>Join the Senior Management team, working closely with the Hospital Director, Head of Clinical Services/Matron and Business Development Manager to play a critical role in shaping short and long term business achievement</li>" +
+                    "<li>Ensure customer processes are effective, efficient, profit and cash flow centred</li>" +
+                    "<li>Support the management team in change management and on projects which influence future improved performance</li>" +
+                    "<li>Develop the hospital’s finance function sharing best practice with colleagues within our network of hospitals</li>" +
+                    "<li>To directly manage the Hospital Business Office which has responsibility for the hospital’s charging and finance processes</li>" +
+                    "<li>Pipeline Management</li>" +
+                    "</ul>" +
+                    "<br/>" +
+                    "<p><strong>Requirements</strong></p>" +
+                    "<ul>" +
+                    "<li>Commercially astute qualified accountant</li>" +
+                    "<li>Healthcare sector knowledge would be good but is not essential</li>" +
+                    "<li>You’ll need to be PC literate and ideally conversant with SAP and Microsoft office</li>" +
+                    "<li>Ability to interpret financial and operating data identifying drivers to profit and drive change through P&amp;L discussions with each Head of Department</li>" +
+                    "<li>Excellent interpersonal and communication skills</li>" +
+                    "<li>Confidence, drive, energy and enthusiasm</li>" +
+                    "<li>Good organisation and planning skills</li>" +
+                    "<li>The ability to problem solve and think laterally about a problem</li>" +
+                    "<li>A flexible approach to support the month-end process and other challenges as they arise in a fast-paced customer facing environment</li>" +
+                    "</ul>" +
+                    "<br/>" +
+                    "<p>For an informal chat or to request a job description please contact Sue Lowe, HR Lead on 01256 895481 or e-mail <a href=''>sue.lowery@medikalclinic.com</a></p>" +
+                    "<p><strong>Reward</strong></p>" +
+                    "<ul>" +
+                    "<li>Salary dependent on experience</li>" +
+                    "</ul>" +
+                    "<br/>" +
+                    "<p>We commit to our employees well-being through training, support and reward. We offer employees a market competitive basic salary and bonus opportunity as well as a comprehensive benefits package which includes contributory pension scheme, life assurance, private medical cover, wellness screening, eyesight tests, childcare vouchers, cycle to work, gym membership, transport season ticket loans and a motivating workplace environment.</p>" +
+                    "<p><strong>Closing Date for Applications</strong></p>" +
+                    "<ul>" +
+                    "<li>All applications for this vacancy should be received by 20th January 2017</li>" +
+                    "</ul>";
+
+                $('.summernote').summernote({
+                    toolbar: [
+                        ['style', ['bold', 'italic', 'underline', 'clear']],
+                        ['font', ['strikethrough', 'superscript', 'subscript']],
+                        ['fontsize', ['fontsize']],
+                        ['color', ['color']],
+                        ['para', ['ul', 'ol', 'paragraph']],
+                        ['height', ['height']]
+                    ],
+                    height: 500,
+                    minHeight: null,
+                    maxHeight: null,
+                    focus: false
+                }).code(markup);
+
+                $(".switch").bootstrapSwitch();
+            });
+
+        </script>
+    </body>
+
+</html>

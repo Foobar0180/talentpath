@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <title>TalentPath | Job Edit (Interview Kit)</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                            <i class="fa fa-map-signs"></i>
+                            <span>TalentPath</span>
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="app-search hidden-xs">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href="pages-404.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </form>
+                            </li>
+                            <li><a href="../careersite/index.html" target="_blank"><i class="fa fa-globe m-r-5"></i>Careers Site</a></li>
+                            <li>
+                                <a href="mail-inbox.html">
+                                    <i class="fa fa-envelope-o m-r-5"></i>
+                                    <span class="badge badge-xs badge-danger">1</span>
+                                </a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group nicescroll notification-list">
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-calendar-o noti-primary"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Interview Reminder</h5>
+                                                    <p class="m-0"><small>Interview at 11:00 am today</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="mail-inbox.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-envelope-o noti-warning"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">New Message</h5>
+                                                    <p class="m-0"><small>You have <span class="text-primary">1</span> new Message</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-success"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0"><small>Version 1.4.6 installed yesterday</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="pages-404.html" class="text-right"><small><b>See all notifications</b></small></a></li>
+                                </ul>
+                            </li>
+                            <li class="session dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect profile" id="user-dropdown-menu" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-caret">
+                                        <span class="caret-outer"></span>
+                                        <span class="caret-inner"></span>
+                                    </div>
+                                    <ul role="menu" aria-labelledby="user-dropdown-menu" aria-hidden="true">
+                                        <li class="current-user" role="presentation">
+                                            <a href="settings-profile.html">
+                                                <b class="fullname">David Williams</b>
+                                                <span class="screen-name hidden">@dwinch</span>
+                                                <small class="metadata">Administrator</small>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="settings-profile.html">View Profile</a></li>
+                                        <li><a href="settings-company.html">Edit Notifications</a></li>
+                                        <li><a href="account-lock.html">Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account-signin.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li class="has-submenu active"><a href="jobs-list.html">Jobs</a></li>
+                            <li><a href="candidates-list.html">Candidates</a></li>
+                            <li><a href="pools-list.html">Talent Pools</a></li>
+                            <li><a href="events-calendar.html">Calendar</a></li>
+                            <li><a href="reports-sources.html">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page-header clearfix">
+                <div class="pull-right">
+                    <a href="jobs-detail-pipeline.html" class="btn btn-link">View Candidates</a>
+                    <button class="btn btn-danger btn-custom waves-effect">
+                      <i class="fa fa-times m-r-5"></i>Unpublish and Use Internally
+                    </button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-custom dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog m-r-5"></i>
+                            <b class="caret"></b>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="jobs-detail-pipeline.html">View</a></li>
+                            <li><a href="#">Remove Bookmark</a></li>
+                            <li><a href="#">Refer Candidates</a></li>
+                            <li><a href="#">Upload Candidates</a></li>
+                            <li><a href="#">View Reports</a></li>
+                            <li><a href="#">Copy Job</a></li>
+                            <li><a href="#">Archive</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="page-title">Jobs</li>
+                    <li><a href="jobs-list.html">All published</a></li>
+                    <li>Finance & Commercial Manager</li>
+                </ol>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs nav-justified navtab-border navtab-primary noshadow">
+                            <li class="tab">
+                                <a href="jobs-edit-detail.html">General Details</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-application.html">Application Form</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-pipeline.html">Hiring Pipeline</a>
+                            </li>
+                            <li class="tab active">
+                                <a href="jobs-edit-interviews-empty.html">Interview Kit</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-team.html">Team Members</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-share.html">Your Network</a>
+                            </li>
+                            <li class="tab">
+                                <a href="jobs-edit-promote.html">Promote</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content noshadow">
+                            <div id="job-details">
+                                <form action="/" method="post" role="form">
+                                    <h4 class="header-title">Interview Kits</h4>
+                                    <p class="text-muted m-b-20 font-13">Each company has their own way of hiring. You can create an interview kit for each assessment stage (phone screen, first, second, third interview), to ensure that every candidate is assessed consistently.</p>
+                                    <div class="alert alert-info alert-dismissible">
+                                        <h4>Helpful Hints</h4>
+                                        <p>Interview kits can ONLY be built for Phone Screen, Assessment and Interview stage types.</p>
+                                        <p class="m-t-10">
+                                            <button type="button" class="btn btn-info waves-effect">Turn off helpful hints</button>
+                                            <button type="button" class="btn btn-default waves-effect">Settings</button>
+                                        </p>
+                                    </div>
+                                    <br>
+                                    <div class="form-controls">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <h4 class="header-title">Available Stages</h4>
+                                                <p class="text-muted m-b-20 font-13">Select the pipeline stage for the interview.</p>
+                                                <div class="list-group mail-list">
+                                                    <a href="jobs-edit-interviews-empty.html" class="list-group-item b-0">
+                                                        <i class="fa fa-phone m-r-10"></i>Phone Screen
+                                                    </a>
+                                                    <a href="#" class="list-group-item b-0">
+                                                        <i class="fa fa-thumbs-up m-r-10"></i>Assessment
+                                                    </a>
+                                                    <a href="jobs-edit-interviews.html" class="list-group-item b-0 active">
+                                                        <i class="fa fa-comments m-r-10"></i>Interview
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-9">
+                                                <h4 class="header-title">Add questions, skills or competencies to your kit.</h4>
+                                                <p class="text-muted m-b-20 font-13">Create your custom scorecard for this job by adding questions or importing them from templates and other jobs.</p>
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <div class="card-box">
+                                                            <div class="card-section">
+                                                                <h5>General</h5>
+                                                                <ul class="kit-list">
+                                                                    <li>Tell me why you are interested in this job</li>
+                                                                    <li>What about our company interests you?</li>
+                                                                    <li>Do you know anyone that works for us?</li>
+                                                                    <li>Why did you leave your last job?</li>
+                                                                    <li>Why should we hire you?</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="card-section">
+                                                                <h5>Work ethic</h5>
+                                                                <ul class="kit-list">
+                                                                    <li>Could you define for me what you believe doing a good job is? A great job?</li>
+                                                                    <li>In your last position, what particular task or project do you believe you did a great job with? Be specific. Explain why you feel it was great.</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="card-section">
+                                                                <h5>Timeline</h5>
+                                                                <ul class="kit-list">
+                                                                    <li>Where are you in your job search? Who else have you applied to/got interviews with?</li>
+                                                                    <li>Are you actively interviewing? What other companies are you interviewing with?</li>
+                                                                    <li>Is there anything that would prevent you from starting a new position within a reasonable notice period?</li>
+                                                                    <li>What is your notice period?</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="card-section">
+                                                                <h5>Salary</h5>
+                                                                <ul class="kit-list">
+                                                                    <li>Please walk me through your current compensation package (Base Salary, Bonus, Stock options, benefits)</li>
+                                                                    <li>What are your salary requirements?</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="card-section">
+                                                                <h5>Relocation/Commute</h5>
+                                                                <ul class="kit-list">
+                                                                    <li>Would you be willing to relocate if required?</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="card-section">
+                                                                <h5>Culture Fit</h5>
+                                                                <ul class="kit-list">
+                                                                    <li>Describe your ideal work environment</li>
+                                                                    <li>Walk me through your perfect work day</li>
+                                                                    <li>What can your hobbies tell me that your resume can't?</li>
+                                                                    <li>What are you passionate about?</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="card-box bg-muted">
+                                                            <div class="list-group mail-list m-0">
+                                                                <a href="#" class="list-group-item b-0">
+                                                                    <i class="fa fa-plus m-r-10"></i>Create a new section
+                                                                </a>
+                                                                <a href="#" class="list-group-item b-0">
+                                                                    <i class="fa fa-cloud-upload m-r-10"></i>Import from templates
+                                                                </a>
+                                                                <a href="#" class="list-group-item b-0" data-toggle="modal" data-target="#panel-modal">
+                                                                    <i class="fa fa-eye m-r-10"></i>Preview interview kit
+                                                                </a>
+                                                                <a href="#" class="list-group-item b-0">
+                                                                    <i class="fa fa-times m-r-10"></i>Delete interview kit
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                ©2016 TalentPath. All rights reserved.
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pull-right list-inline m-b-0">
+                                    <li>
+                                        <a href="pages-404.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div id="panel-modal" class="modal fade" tabindex="-1" role="dialog" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content p-0 b-0">
+                    <div class="panel panel-color panel-primary">
+                        <div class="panel-heading">
+                            <button type="button" class="close m-t-5" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="panel-title">Scorecard for Finance & Commercial Manager - Interview</h3>
+                        </div>
+                        <div class="panel-body">
+                            <h5>Miscellaneous</h5>
+                            <table class="table table-bordered tables-scorecard">
+                                <thead>
+                                    <tr>
+                                        <th>General</th>
+                                        <th class="kit-rating"><i class="fa fa-star"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-up"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-down"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Tell me why you are interested in this job</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">What about our company interests you?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Do you know anyone that works for us?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Why did you leave your last job?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Why should we hire you?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered tables-scorecard">
+                                <thead>
+                                    <tr>
+                                        <th>Work ethic</th>
+                                        <th class="kit-rating"><i class="fa fa-star"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-up"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-down"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Could you define for me what you believe doing a good job is? A great job?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">In your last position, what particular task or project do you believe you did a great job with? Be specific. Explain why you feel it was great.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered tables-scorecard">
+                                <thead>
+                                    <tr>
+                                        <th>Timeline</th>
+                                        <th class="kit-rating"><i class="fa fa-star"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-up"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-down"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Where are you in your job search? Who else have you applied to/got interviews with?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Are you actively interviewing? What other companies are you interviewing with?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Is there anything that would prevent you from starting a new position within a reasonable notice period?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">What is your notice period?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered tables-scorecard">
+                                <thead>
+                                    <tr>
+                                        <th>Salary</th>
+                                        <th class="kit-rating"><i class="fa fa-star"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-up"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-down"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Please walk me through your current compensation package (Base Salary, Bonus, Stock options, benefits)</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">What are your salary requirements?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered tables-scorecard">
+                                <thead>
+                                    <tr>
+                                        <th>Relocation/Commute</th>
+                                        <th class="kit-rating"><i class="fa fa-star"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-up"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-down"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Would you be willing to relocate if required?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered tables-scorecard">
+                                <thead>
+                                    <tr>
+                                        <th>Culture Fit</th>
+                                        <th class="kit-rating"><i class="fa fa-star"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-up"></i></th>
+                                        <th class="kit-rating"><i class="fa fa-thumbs-down"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4">Describe your ideal work environment</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">Walk me through your perfect work day</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">What can your hobbies tell me that your resume can't?</td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="4">What are you passionate about?</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Js Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+
+</html>

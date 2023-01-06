@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <title>TalentPath | Talent Pool Details (Filters)</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                            <i class="fa fa-map-signs"></i>
+                            <span>TalentPath</span>
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="app-search hidden-xs">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href="pages-404.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </form>
+                            </li>
+                            <li><a href="../careersite/index.html" target="_blank"><i class="fa fa-globe m-r-5"></i>Careers Site</a></li>
+                            <li>
+                                <a href="mail-inbox.html">
+                                    <i class="fa fa-envelope-o m-r-5"></i>
+                                    <span class="badge badge-xs badge-danger">1</span>
+                                </a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group nicescroll notification-list">
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-calendar-o noti-primary"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Interview Reminder</h5>
+                                                    <p class="m-0"><small>Interview at 11:00 am today</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="mail-inbox.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-envelope-o noti-warning"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">New Message</h5>
+                                                    <p class="m-0"><small>You have <span class="text-primary">1</span> new Message</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-success"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0"><small>Version 1.4.6 installed yesterday</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="pages-404.html" class="text-right"><small><b>See all notifications</b></small></a></li>
+                                </ul>
+                            </li>
+                            <li class="session dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect profile" id="user-dropdown-menu" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-caret">
+                                        <span class="caret-outer"></span>
+                                        <span class="caret-inner"></span>
+                                    </div>
+                                    <ul role="menu" aria-labelledby="user-dropdown-menu" aria-hidden="true">
+                                        <li class="current-user" role="presentation">
+                                            <a href="settings-profile.html">
+                                                <b class="fullname">David Williams</b>
+                                                <span class="screen-name hidden">@dwinch</span>
+                                                <small class="metadata">Administrator</small>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="settings-profile.html">View Profile</a></li>
+                                        <li><a href="settings-company.html">Edit Notifications</a></li>
+                                        <li><a href="account-lock.html">Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account-signin.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="jobs-list.html">Jobs</a></li>
+                            <li><a href="candidates-list.html">Candidates</a></li>
+                            <li class="has-submenu active"><a href="pools-list.html">Talent Pools</a></li>
+                            <li><a href="events-calendar.html">Calendar</a></li>
+                            <li><a href="reports-sources.html">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page-header clearfix">
+                <div class="pull-right">
+                    <a href="pools-list.html" class="btn btn-link">
+                        <i class="fa fa-arrow-left m-r-10"></i>Back to Talent Pools
+                    </a>
+                    <a href="pools-edit-detail.html" class="btn btn-success btn-custom waves-effect">
+                        <i class="fa fa-pencil m-r-5"></i>Edit Pool
+                    </a>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-custom dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-cog m-r-5"></i>
+                            <b class="caret"></b>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                            <li><a href="pools-edit-detail.html">Edit</a></li>
+                            <li><a href="#">Remove Bookmark</a></li>
+                            <li><a href="#">Upload Candidates</a></li>
+                            <li><a href="#">Make Private</a></li>
+                            <li><a href="#">Copy</a></li>
+                            <li><a href="#">Archive</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="page-title">Talent Pools</li>
+                    <li><a href="pools-list.html">All active</a></li>
+                    <li>Function: Non-Clinical</li>
+                </ol>
+            </div>
+            <div class="container">
+                <div id="pool-details" class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs nav-justified navtab-custom">
+                            <li class="tab">
+                                <a href="pools-detail-filters.html">Filters</a>
+                            </li>
+                            <li class="tab">
+                                <a href="pools-detail-comments.html">Comments</a>
+                            </li>
+                            <li class="tab">
+                                <a href="pools-detail-files.html">Files (1)</a>
+                            </li>
+                            <li class="tab active">
+                                <a href="pools-detail-team.html">Team Members</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="job-details">
+                                <form action="/" method="post" role="form">
+                                    <h4 class="header-title">Team Members following this Talent Pool</h4>
+                                    <p class="text-muted m-b-20 font-13">You can choose to add existing team members or invite a new team member to manage the Talent Pool.</p>
+                                    <div class="form-controls">
+                                        <div class="card-box m-b-20 p-0">
+                                            <table class="table table-responsive table-hover table-custom m-t-20 m-b-0">
+                                                <colgroup>
+                                                    <col style="width: 48px;">
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Name</th>
+                                                        <th>Job Title</th>
+                                                        <th>Role</th>
+                                                        <th></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="avatar">
+                                                                <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle img-sm">
+                                                                <span class="status-badge active"></span>
+                                                            </div>
+                                                        </td>
+                                                        <td><a href="settings-profile.html">David Williams</a></td>
+                                                        <td>Cheif Technical Officer</td>
+                                                        <td>Administrator</td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <span class="avatar">
+                                                            <img src="assets/images/users/blank.png" alt="user-img" class="img-circle img-sm">
+                                                              <span class="status-badge"></span>
+                                                            </span>
+                                                        </td>
+                                                        <td><a href="settings-profile.html">Sarah King</a></td>
+                                                        <td>HR Administrator</td>
+                                                        <td>Hiring Manager</td>
+                                                        <td>
+                                                            <div class="dropdown">
+                                                                <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                                    <i class="fa fa-cog m-r-5"></i>
+                                                                    <b class="caret"></b>
+                                                                </a>
+                                                                </button>
+                                                                <ul class="dropdown-menu dropdown-menu-right">
+                                                                    <li><a href="#">Impersonate</a></li>
+                                                                    <li><a href="#">Remove from Team</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="row m-t-20 m-b-40">
+                                            <div class="col-md-6">
+                                                <div class="form-inline">
+                                                    <select class="form-control one-half m-r-20" id="template-variables">
+                                                        <option value="0">-- Please choose --</option>
+                                                        <option value="1">Sam Larson</option>
+                                                    </select>
+                                                    <button type="button" class="btn btn-primary waves-effect">
+                                                        <i class="fa fa-plus m-r-10"></i>Add to Team
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 text-right">
+                                                <button type="button" class="btn btn-primary waves-effect" data-toggle="modal" data-target="#panel-modal">
+                                                    <i class="fa fa-plus m-r-10"></i>Invite Team Member
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h5>Talent Pool Visibility</h5>
+                                        <p>Allow anyone in the company to view this talent pool and refer candidates.</p>
+                                        <p class="text-muted">At present, <strong>only</strong> Administrators and Team Members can view this talent pool.</p>
+                                        <br>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Visible to all account members</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="button" id="sa-save" class="btn btn-primary waves-effect">Save Changes</button>
+                                        <button type="button" class="btn btn-link">Cancel</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="footer text-right">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    ©2016 TalentPath. All rights reserved.
+                                </div>
+                                <div class="col-xs-6">
+                                    <ul class="pull-right list-inline m-b-0">
+                                        <li>
+                                            <a href="pages-404.html">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-404.html">Help</a>
+                                        </li>
+                                        <li>
+                                            <a href="pages-404.html">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+
+        <!-- Invite Team Member Modal -->
+        <div id="panel-modal" class="modal fade" role="dialog" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content p-0 b-0">
+                    <div class="panel panel-color panel-primary">
+                        <div class="panel-heading">
+                            <button type="button" class="close m-t-5" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="panel-title">Invite Team Member</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form action="/" method="post" role="form">
+                                <p class="text-muted font-13">
+                                    Invited members will automatically become collaborators for this job, once they sign up.
+                                </p>
+                                <div class="form-controls">
+                                    <div class="row m-t-20">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="firstname">First Name</label>
+                                                <input type="input" class="form-control" id="firstname" placeholder="Enter first name" value="Rihanna">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="lastname">Last Name</label>
+                                                <input type="input" class="form-control" id="lastname" placeholder="Enter last name" value="Shaw">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t-20">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email">Email Address <span class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="email" placeholder="Enter email address" value="rihanna.shaw@trg-uk.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="roles">Role</label>
+                                                <select class="form-control" id="roles">
+                                                    <option value="0">-- Please choose --</option>
+                                                    <option value="1">Administrator</option>
+                                                    <option value="2">Hiring Manager</option>
+                                                    <option value="3">Team Member</option>
+                                                    <option value="4" selected>External Recruiter</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-t-20">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label">Personal Message</label>
+                                                <textarea name="message" rows="8" cols="40" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button type="button" id="sa-invite" class="btn btn-primary waves-effect " data-dismiss="modal">Send Invitation</button>
+                            <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Js Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <title>TalentPath | Filter Candidates (Empty)</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                            <i class="fa fa-map-signs"></i>
+                            <span>TalentPath</span>
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="app-search hidden-xs">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href="pages-404.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </form>
+                            </li>
+                            <li><a href="../careersite/index.html" target="_blank"><i class="fa fa-globe m-r-5"></i>Careers Site</a></li>
+                            <li>
+                                <a href="mail-inbox.html">
+                                    <i class="fa fa-envelope-o m-r-5"></i>
+                                    <span class="badge badge-xs badge-danger">1</span>
+                                </a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group nicescroll notification-list">
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-calendar-o noti-primary"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Interview Reminder</h5>
+                                                    <p class="m-0"><small>Interview at 11:00 am today</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="mail-inbox.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-envelope-o noti-warning"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">New Message</h5>
+                                                    <p class="m-0"><small>You have <span class="text-primary">1</span> new Message</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-success"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0"><small>Version 1.4.6 installed yesterday</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="pages-404.html" class="text-right"><small><b>See all notifications</b></small></a></li>
+                                </ul>
+                            </li>
+                            <li class="session dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect profile" id="user-dropdown-menu" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-caret">
+                                        <span class="caret-outer"></span>
+                                        <span class="caret-inner"></span>
+                                    </div>
+                                    <ul role="menu" aria-labelledby="user-dropdown-menu" aria-hidden="true">
+                                        <li class="current-user" role="presentation">
+                                            <a href="settings-profile.html">
+                                                <b class="fullname">David Williams</b>
+                                                <span class="screen-name hidden">@dwinch</span>
+                                                <small class="metadata">Administrator</small>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="settings-profile.html">View Profile</a></li>
+                                        <li><a href="settings-company.html">Edit Notifications</a></li>
+                                        <li><a href="account-lock.html">Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account-signin.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="jobs-list.html">Jobs</a></li>
+                            <li class="has-submenu active"><a href="candidates-list.html">Candidates</a></li>
+                            <li><a href="pools-list.html">Talent Pools</a></li>
+                            <li><a href="events-calendar.html">Calendar</a></li>
+                            <li><a href="reports-sources.html">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page-header clearfix">
+                <div class="pull-right">
+                    <button class="btn btn-default btn-icon btn-custom waves-effect">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button class="btn btn-primary btn-custom waves-effect" data-toggle="modal" data-target="#candidate-modal">
+                        <i class="fa fa-plus m-r-5"></i>Add Candidate
+                    </button>
+                    <button type="button" class="btn btn-success btn-custom waves-effect">
+                        <i class="fa fa-upload m-r-10"></i>Import Resumes
+                    </button>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="page-title">Candidates</li>
+                    <li>By filter</li>
+                </ol>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="empty-state">
+                            <h1><i class="fa fa-users"></i></h1>
+                            <h4 class="header-title">No candidates found</h4>
+                            <p>How about changing your search filters and try again?</p>
+                            <p class="m-t-20">
+                                <button type="button" class="btn btn-primary waves-effect">
+                                    <i class="fa fa-undo m-r-10"></i>Reset Filters
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer text-right">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            ©2016 TalentPath. All rights reserved.
+                        </div>
+                        <div class="col-xs-6">
+                            <ul class="pull-right list-inline m-b-0">
+                                <li>
+                                    <a href="pages-404.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="pages-404.html">Help</a>
+                                </li>
+                                <li>
+                                    <a href="pages-404.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div id="candidate-modal" class="modal fade" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-content p-0 b-0">
+                    <div class="panel panel-color panel-primary">
+                        <div class="panel-heading">
+                            <button type="button" class="close m-t-5" data-dismiss="modal" aria-hidden="true">×</button>
+                            <h3 class="panel-title">Add New Candidate</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form action="/" method="post" role="form">
+                                <div class="form-controls">
+                                    <div class="form-group">
+                                        <label for="resume-upload">Upload Resume</label>
+                                        <p>Do you have a resume? <a href="#" id="resume-upload">Upload it now</a>.</p>
+                                    </div>
+                                    <div class="form-group m-t-20 m-b-0">
+                                        <div class="col-xs-12 text-center">
+                                            <div class="section-divider">
+                                                <span>OR</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label" for="linkedin-url">Retrieve LinkedIn Profile</label>
+                                        <input type="input" class="form-control" id="linkedin-url" placeholder="Copy link to profile" value="https://www.linkedin.com/in/ross-forbes-a0373a20/">
+                                        <span class="help-block text-muted">
+                                            <small>If you’ve found a great candidate on LinkedIn, copy and paste their public profile web address and it will be automatically retrieved and added as a new candidate.</small>
+                                        </span>
+                                        <button type="button" class="btn btn-linkedin m-t-10">
+                                            <i class="fa fa-linkedin-square m-r-10"></i>Retrieve Profile
+                                        </button>
+                                    </div>
+                                    <div class="form-group m-t-20 m-b-0">
+                                        <div class="col-xs-12 text-center">
+                                            <div class="section-divider">
+                                                <span>OR</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label for="candidate-name">Full Name <span class="text-danger">*</span></label>
+                                                <input type="input" class="form-control" id="candidate-name" placeholder="Enter full name" value="Ross Forbes">
+                                                <span class="help-block text-muted">
+                                                    <small>Even if you only have a candidate’s name, you can enter the details here. Use the edit candidate feature to upload a resume or update their contact information at a later stage.</small>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="candidate-email">Email Address <span class="text-danger">*</span></label>
+                                                <input type="email" class="form-control" id="candidate-email" placeholder="Enter email address" value="ross.forbes@yuminternational.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="candidate-telephone">Phone #</label>
+                                                <input type="input" class="form-control" id="candidate-telephone" placeholder="Enter phone number">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="candidate-headline">Headline</label>
+                                                <input type="input" class="form-control" id="candidate-headline" placeholder="Enter headline" value="Senior Service Delivery Analyst">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="control-label" for="candidates-source">Source</label>
+                                                <select class="form-control" id="candidates-source">
+                                                    <option value="0">-- Please choose --</option>
+                                                    <option value="1">Referral</option>
+                                                    <option value="2">TalentScout</option>
+                                                    <option value="3" selected="selected">LinkedIn</option>
+                                                    <option value="4">Indeed</option>
+                                                    <option value="5">Monster</option>
+                                                    <option value="6">CareerJet</option>
+                                                    <option value="7">CareerBuilder</option>
+                                                    <option value="8">Stackoverflow</option>
+                                                    <option value="9">Manual Upload</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label class="control-label" for="new-candidate-comment">Note</label>
+                                                <textarea id="new-candidate-comment" rows="5" cols="40" class="form-control">I found Ross's profile on LinkedIn. He could be an interesting fit for this role.</textarea>
+                                                <span class="help-block text-muted">
+                                                    <small>Write a comment about this candidate i.e. where do you know them from, what is your opinion of them etc.</small>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                        <div class="panel-footer text-right">
+                            <button type="button" class="btn btn-primary waves-effect" data-dismiss="modal">Save Changes</button>
+                            <button type="button" class="btn btn-link" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Js Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+
+</html>

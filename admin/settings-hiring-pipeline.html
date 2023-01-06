@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <title>TalentPath | Hiring Pipeline Defaults</title>
+        <link href="assets/plugins/summernote/dist/summernote.css" rel="stylesheet" />
+        <link href="assets/plugins/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css" rel="stylesheet" />
+        <link href="assets/plugins/bootstrap-sweetalert/sweet-alert.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                            <i class="fa fa-map-signs"></i>
+                            <span>TalentPath</span>
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="app-search hidden-xs">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href="pages-404.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </form>
+                            </li>
+                            <li><a href="../careersite/index.html" target="_blank"><i class="fa fa-globe m-r-5"></i>Careers Site</a></li>
+                            <li>
+                                <a href="mail-inbox.html">
+                                    <i class="fa fa-envelope-o m-r-5"></i>
+                                    <span class="badge badge-xs badge-danger">1</span>
+                                </a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group nicescroll notification-list">
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-calendar-o noti-primary"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Interview Reminder</h5>
+                                                    <p class="m-0"><small>Interview at 11:00 am today</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="mail-inbox.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-envelope-o noti-warning"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">New Message</h5>
+                                                    <p class="m-0"><small>You have <span class="text-primary">1</span> new Message</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-success"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0"><small>Version 1.4.6 installed yesterday</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="pages-404.html" class="text-right"><small><b>See all notifications</b></small></a></li>
+                                </ul>
+                            </li>
+                            <li class="session dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect profile" id="user-dropdown-menu" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-caret">
+                                        <span class="caret-outer"></span>
+                                        <span class="caret-inner"></span>
+                                    </div>
+                                    <ul role="menu" aria-labelledby="user-dropdown-menu" aria-hidden="true">
+                                        <li class="current-user" role="presentation">
+                                            <a href="settings-profile.html">
+                                                <b class="fullname">David Williams</b>
+                                                <span class="screen-name hidden">@dwinch</span>
+                                                <small class="metadata">Administrator</small>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="settings-profile.html">View Profile</a></li>
+                                        <li><a href="settings-company.html">Edit Notifications</a></li>
+                                        <li><a href="account-lock.html">Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account-signin.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li><a href="jobs-list.html">Jobs</a></li>
+                            <li><a href="candidates-list.html">Candidates</a></li>
+                            <li><a href="pools-list.html">Talent Pools</a></li>
+                            <li><a href="events-calendar.html">Calendar</a></li>
+                            <li><a href="reports-sources.html">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page-header clearfix">
+                <button class="btn btn-primary btn-custom pull-right waves-effect">
+                    <i class="fa fa-plus m-r-10"></i>Add New Stage
+                </button>
+                <ol class="breadcrumb">
+                    <li class="page-title">Settings</li>
+                    <li>Hiring Pipelines Default</li>
+                </ol>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <h3 class="panel-title">You</h3>
+                        <div class="list-group mail-list">
+                            <a href="settings-profile.html" class="list-group-item b-0">
+                                <i class="fa fa-user m-r-10"></i>Edit Your Profile
+                            </a>
+                            <a href="settings-notifications.html" class="list-group-item b-0">
+                                <i class="fa fa-bell-o m-r-10"></i>Notifications
+                            </a>
+                            <a href="settings-mail-templates.html" class="list-group-item b-0">
+                                <i class="fa fa-envelope-o m-r-10"></i>Mail Templates
+                            </a>
+                        </div>
+                        <h3 class="panel-title m-t-40">Company</h3>
+                        <div class="list-group mail-list">
+                            <a href="settings-company.html" class="list-group-item b-0">
+                                <i class="fa fa-building m-r-10"></i>General Information
+                            </a>
+                            <a href="settings-hiring-pipeline.html" class="list-group-item b-0 active">
+                                <i class="fa fa-briefcase m-r-10"></i>Hiring Pipeline Defaults
+                            </a>
+                            <a href="settings-interview-templates.html" class="list-group-item b-0">
+                                <i class="fa fa-clipboard m-r-10"></i>Interview Templates
+                            </a>
+                            <a href="settings-team-members.html" class="list-group-item b-0">
+                                <i class="fa fa-user-plus m-r-10"></i>Team Members
+                            </a>
+                            <a href="settings-roles.html" class="list-group-item b-0">
+                                <i class="fa fa-user-secret m-r-10"></i>Access Roles and Permissions
+                            </a>
+                            <a href="settings-theme.html" class="list-group-item b-0">
+                                <i class="fa fa-paint-brush m-r-10"></i>Careers Site
+                            </a>
+                        </div>
+                        <h3 class="panel-title m-t-40">Payments</h3>
+                        <div class="list-group mail-list">
+                            <a href="settings-billing.html" class="list-group-item b-0">
+                                <i class="fa fa-bank m-r-10"></i>Billing Information
+                            </a>
+                            <a href="settings-invoices.html" class="list-group-item b-0">
+                                <i class="fa fa-credit-card m-r-10"></i>Invoices
+                            </a>
+                            <a href="settings-subscription.html" class="list-group-item b-0">
+                                <i class="fa fa-history m-r-10"></i>Subscription Plan
+                            </a>
+                        </div>
+                        <h3 class="panel-title m-t-40">Plugins and Integrations</h3>
+                        <div class="list-group mail-list">
+                            <a href="settings-integrations.html" class="list-group-item b-0">
+                                <i class="fa fa-cogs m-r-10"></i>Service Integrations
+                            </a>
+                            <a href="settings-widgets.html" class="list-group-item b-0">
+                                <i class="fa fa-cog m-r-10"></i>Jobs Widget
+                            </a>
+                            <a href="settings-api.html" class="list-group-item b-0">
+                                <i class="fa fa-puzzle-piece m-r-10"></i>Developer API
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="card-box">
+                            <h4 class="header-title">Hiring Pipeline Defaults</h4>
+                            <p class="text-muted m-b-20 font-13">
+                                TalentPath allows you to move, edit and rename pipeline stages to streamline your hiring in the way that works best for you and your team.
+                            </p>
+                            <ul class="edit-stages p-0 m-t-20">
+                                <li class="stage sourced">
+                                    <div class="inner">
+                                        <span class="name">Sourced</span>
+                                    </div>
+                                </li>
+                                <li class="stage applied">
+                                    <div class="inner">
+                                        <span class="name">Applied</span>
+                                    </div>
+                                </li>
+                                <li class="stage phone-screen editable">
+                                    <div class="inner">
+                                        <a href="settings-hiring-pipeline-edit.html" class="name">Phone Screen</a>
+                                    </div>
+                                </li>
+                                <li class="stage interview editable">
+                                    <div class="inner">
+                                        <a href="#" class="name">Interview</a>
+                                    </div>
+                                </li>
+                                <li class="stage offer editable">
+                                    <div class="inner">
+                                        <a href="#" class="name">Offer</a>
+                                    </div>
+                                </li>
+                                <li class="stage hired editable">
+                                    <div class="inner">
+                                        <a href="#" class="name">Hired</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="row m-t-20">
+                                <div class="col-md-6">
+                                    <h5>Built-in Stages "Sourced" and "Applied"</h5>
+                                    <p>These are default stages that TalentPath needs to manage your incoming candidates, so you cannot change or delete them. Candidates applying through your careers portal, website or job boards will be initially place
+                                        in the "Applied" stage.</p>
+                                    <p>Candidates that you upload or pre-select from your candidate database will be placed in the "Sourced" stage. Unlike candidates who have applied themselves, sourced candidates are people you need to reach out to before
+                                        establishing that they are interested in a job.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Customisable Stages</h5>
+                                    <p>You can label stages however you like. You can assign a "stage type" for each pipeline stage. This helps with displaying the appropriate icons and also produce meaningful reports.</p>
+                                    <p>For example, if you have two rounds of interviews, create two stages called "Interview 1" and "Interview 2" but mark them both as type "Interview" so we can display them in the right way.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                ©2016 TalentPath. All rights reserved.
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pull-right list-inline m-b-0">
+                                    <li>
+                                        <a href="pages-404.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- Js Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+
+</html>

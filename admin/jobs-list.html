@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <title>TalentPath | Published Jobs</title>
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/core.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/pages.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/menu.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+
+        <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html" class="logo">
+                            <i class="fa fa-map-signs"></i>
+                            <span>TalentPath</span>
+                        </a>
+                    </div>
+                    <div class="menu-extras">
+                        <ul class="nav navbar-nav navbar-right pull-right">
+                            <li>
+                                <form role="search" class="app-search hidden-xs">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href="pages-404.html">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </form>
+                            </li>
+                            <li><a href="../careersite/index.html" target="_blank"><i class="fa fa-globe m-r-5"></i>Careers Site</a></li>
+                            <li>
+                                <a href="mail-inbox.html">
+                                    <i class="fa fa-envelope-o m-r-5"></i>
+                                    <span class="badge badge-xs badge-danger">1</span>
+                                </a>
+                            </li>
+                            <li class="dropdown hidden-xs">
+                                <a href="#" data-target="#" class="dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="true">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge badge-xs badge-danger">3</span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-lg">
+                                    <li class="text-center notifi-title">Notification</li>
+                                    <li class="list-group nicescroll notification-list">
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-calendar-o noti-primary"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Interview Reminder</h5>
+                                                    <p class="m-0"><small>Interview at 11:00 am today</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="mail-inbox.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-envelope-o noti-warning"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">New Message</h5>
+                                                    <p class="m-0"><small>You have <span class="text-primary">1</span> new Message</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="pages-404.html" class="list-group-item">
+                                            <div class="media">
+                                                <div class="pull-left p-r-10">
+                                                    <em class="fa fa-bell-o noti-success"></em>
+                                                </div>
+                                                <div class="media-body">
+                                                    <h5 class="media-heading">Updates</h5>
+                                                    <p class="m-0"><small>Version 1.4.6 installed yesterday</small></p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li><a href="pages-404.html" class="text-right"><small><b>See all notifications</b></small></a></li>
+                                </ul>
+                            </li>
+                            <li class="session dropdown">
+                                <a href="#" class="dropdown-toggle waves-effect profile" id="user-dropdown-menu" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/1.jpg" alt="user-img" class="img-circle">
+                                </a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-caret">
+                                        <span class="caret-outer"></span>
+                                        <span class="caret-inner"></span>
+                                    </div>
+                                    <ul role="menu" aria-labelledby="user-dropdown-menu" aria-hidden="true">
+                                        <li class="current-user" role="presentation">
+                                            <a href="settings-profile.html">
+                                                <b class="fullname">David Williams</b>
+                                                <span class="screen-name hidden">@dwinch</span>
+                                                <small class="metadata">Administrator</small>
+                                            </a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li><a href="settings-profile.html">View Profile</a></li>
+                                        <li><a href="settings-company.html">Edit Notifications</a></li>
+                                        <li><a href="account-lock.html">Lock screen</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="account-signin.html">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="menu-item">
+                            <a class="navbar-toggle">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-custom">
+                <div class="container">
+                    <div id="navigation">
+                        <ul class="navigation-menu">
+                            <li><a href="index.html">Dashboard</a></li>
+                            <li class="has-submenu active"><a href="jobs-list.html">Jobs</a></li>
+                            <li><a href="candidates-list.html">Candidates</a></li>
+                            <li><a href="pools-list.html">Talent Pools</a></li>
+                            <li><a href="events-calendar.html">Calendar</a></li>
+                            <li><a href="reports-sources.html">Reports</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="page-header clearfix">
+                <div class="pull-right">
+                    <button class="btn btn-default btn-icon btn-custom waves-effect">
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <button class="btn btn-primary btn-custom waves-effect">
+                        <i class="fa fa-plus m-r-10"></i>Add New
+                    </button>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="page-title">Jobs</li>
+                    <li>All published</li>
+                </ol>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="clearfix">
+                            <h4 class="pull-left">
+                              <i class="fa fa-filter m-r-10"></i>Filters
+                            </h4>
+                            <div class="pull-right m-t-10">
+                                <a href="#" class="text-uppercase font-sm">Clear filters</a>
+                            </div>
+                        </div>
+                        <div id="filters" class="panel-group">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                    <a href="#stages-filter" class="collapsed" data-toggle="collapse" data-parent="#filters" aria-expanded="false">Stages</a>
+                                </h4>
+                                </div>
+                                <div id="stages-filter" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Sourced</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Applied</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Phone Screen</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Interview</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Offer</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Hired</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                    <a href="#location-filter" class="" data-toggle="collapse" data-parent="#filters" aria-expanded="true">Location</a>
+                                </h4>
+                                </div>
+                                <div id="location-filter" class="panel-collapse collapse in" aria-expanded="true">
+                                    <div class="panel-body">
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>East of England</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>London</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Midlands</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>North West</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>South East</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Wales</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>International</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                    <a href="#functions-filter" class="collapsed" data-toggle="collapse" data-parent="#filters" aria-expanded="false">Functions</a>
+                                </h4>
+                                </div>
+                                <div id="functions-filter" class="panel-collapse collapse" aria-expanded="false">
+                                    <div class="panel-body">
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Clinical</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Non-Clinical</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input type="checkbox">
+                                            <label>Operational Support</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4><i class="fa fa-search m-r-10"></i>15 Matches</h4>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="btn-group dropdown pull-right">
+                                    <button type="button" class="btn btn-default waves-effect">
+                                        <i class="fa fa-sort-alpha-asc m-r-10"></i>Sort By
+                                    </button>
+                                    <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false"><i class="caret"></i></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Date Created</a></li>
+                                        <li><a href="#">Job Title</a></li>
+                                        <li><a href="#">Function</a></li>
+                                        <li><a href="#">Region</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jobs-list">
+                            <ul class="list-unstyled">
+                                <li class="job">
+                                    <div class="job-header clearfix">
+                                        <h4 class="job-title pull-left">
+                                            <i class="fa fa-bookmark pin text-primary"></i>
+                                            <a href="jobs-detail-pipeline.html">Finance & Commercial Manager</a>
+                                            <span class="job-meta">
+                                                <span class="department">Non-Clinical</span> &middot;
+                                                <span class="location">Farnham, United Kingdom</span>
+                                            </span>
+                                        </h4>
+                                        <div class="btn-actions pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-cog"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="jobs-edit-detail.html">Edit</a></li>
+                                                    <li><a href="#" onclick="$.Notification.notify('success','top right', 'Bookmark Removed', 'You will not receive any further notifications regarding this job.')">Remove Bookmark</a></li>
+                                                    <li><a href="jobs-edit-promote.html">Promote on Job Boards</a></li>
+                                                    <li><a href="candidates-referrals-search.html">Refer Candidates</a></li>
+                                                    <li><a href="#">Upload Candidates</a></li>
+                                                    <li><a href="jobs-detail-reports.html">View Reports</a></li>
+                                                    <li><a href="#">Copy</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#" onclick="$.Notification.notify('warning','top right', 'Cannot unpublish job', 'The job cannot be unpulished as there are currently 3 scheduled interviews.')">Unpublish</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages">
+                                        <ul>
+                                            <li class="sourced filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-candidates-profile.html">
+                                                        <strong class="stage-number">12</strong>
+                                                        <span class="stage-label">Sourced</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="applied filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-candidates-profile.html">
+                                                        <strong class="stage-number">7</strong>
+                                                        <span class="stage-label">Applied</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="phone-screen filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-candidates-profile.html">
+                                                        <strong class="stage-number">5</strong>
+                                                        <span class="stage-label">Phone Screen</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="assessment filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-candidates-profile.html">
+                                                        <strong class="stage-number">4</strong>
+                                                        <span class="stage-label">Assessment</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="interview filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-candidates-profile.html">
+                                                        <strong class="stage-number">3</strong>
+                                                        <span class="stage-label">Interview</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="offer filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-candidates-profile.html">
+                                                        <strong class="stage-number">2</strong>
+                                                        <span class="stage-label">Offer</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="hired">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-candidates-profile.html">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Hired</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-footer">
+                                        <span class="text-muted published-info"><i class="fa fa-check-circle text-success m-r-5"></i>Published to your <a href="../CareerSite/job-detail.html" target="_blank">Careers Site</a> and <a href="jobs-edit-promote.html">6 free</a> job boards</span>
+                                        <span class="text-muted pull-right">Candidates: Total 58 &middot; In Pipeline: 21</span>
+                                    </div>
+                                </li>
+                                <li class="job">
+                                    <div class="job-header clearfix">
+                                        <h4 class="job-title pull-left">
+                                            <i class="fa fa-bookmark-o pin"></i>
+                                            <a href="#">Staff Nurse</a>
+                                            <span class="job-meta">
+                                                <span class="department">Clinical</span> &middot;
+                                                <span class="location">Murrayfield Ward, Scotland</span>
+                                            </span>
+                                        </h4>
+                                        <div class="btn-actions pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-cog"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#">Edit</a></li>
+                                                    <li><a href="#">Bookmark</a></li>
+                                                    <li><a href="#">Promote on Job Boards</a></li>
+                                                    <li><a href="#">Refer Candidates</a></li>
+                                                    <li><a href="#">Upload Candidates</a></li>
+                                                    <li><a href="#">View Reports</a></li>
+                                                    <li><a href="#">Copy</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Unpublish</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages">
+                                        <ul>
+                                            <li class="sourced filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">6</strong>
+                                                        <span class="stage-label">Sourced</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="applied filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">18</strong>
+                                                        <span class="stage-label">Applied</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="phone-screen">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Phone Screen</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="interview">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Interview</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="offer">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Offer</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="hired">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Hired</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-footer">
+                                        <span class="text-muted published-info"><i class="fa fa-check-circle text-success m-r-5"></i>Published to your <a href="pages-404.html" target="_blank">Careers Site</a></span>
+                                        <span class="text-muted pull-right">Candidates: Total 18 &middot; In Pipeline: 9</span>
+                                    </div>
+                                </li>
+                                <li class="job">
+                                    <div class="job-header clearfix">
+                                        <h4 class="job-title pull-left">
+                                            <i class="fa fa-bookmark-o pin"></i>
+                                            <a href="#">PMI Credit Controller</a>
+                                            <span class="job-meta">
+                                                <span class="department">Non-Clinical</span> &middot;
+                                                <span class="location">Reading, United Kingdom</span>
+                                            </span>
+                                        </h4>
+                                        <div class="btn-actions pull-right">
+                                            <button type="button" class="btn btn-success">
+                                                Publish
+                                            </button>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-cog"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="jobs-edit-detail.html">Edit</a></li>
+                                                    <li><a href="#">Bookmark</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#" onclick="$.Notification.notify('success','top right', 'Job published', 'The job was published to your careers site successfully.')">Publish</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages">
+                                        <ul>
+                                            <li class="sourced">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-pipeline-empty.html">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Sourced</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="applied">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-pipeline-empty.html">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Applied</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="phone-screen">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-pipeline-empty.html">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Phone Screen</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="interview">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-pipeline-empty.html">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Interview</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="offer">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-pipeline-empty.html">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Offer</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="hired">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="jobs-detail-pipeline-empty.html">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Hired</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-footer">
+                                        <span class="text-muted published-info"><i class="fa fa-edit m-r-5"></i>Currently in draft</span>
+                                        <span class="text-muted pull-right">Last modified 1 day ago</span>
+                                    </div>
+                                </li>
+                                <li class="job">
+                                    <div class="job-header clearfix">
+                                        <h4 class="job-title pull-left">
+                                            <i class="fa fa-bookmark-o pin"></i>
+                                            <a href="#">Theatre/Inpatient Bookings Administrator</a>
+                                            <span class="job-meta">
+                                                <span class="department">Operational Support</span> &middot;
+                                                <span class="location">Cardiff, Wales</span>
+                                            </span>
+                                        </h4>
+                                        <div class="btn-actions pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-cog"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#">Edit</a></li>
+                                                    <li><a href="#">Bookmark</a></li>
+                                                    <li><a href="#">Promote on Job Boards</a></li>
+                                                    <li><a href="#">Refer Candidates</a></li>
+                                                    <li><a href="#">Upload Candidates</a></li>
+                                                    <li><a href="#">View Reports</a></li>
+                                                    <li><a href="#">Copy</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Unpublish</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages">
+                                        <ul>
+                                            <li class="sourced filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">25</strong>
+                                                        <span class="stage-label">Sourced</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="applied filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">16</strong>
+                                                        <span class="stage-label">Applied</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="phone-screen filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">14</strong>
+                                                        <span class="stage-label">Phone Screen</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="interview filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">8</strong>
+                                                        <span class="stage-label">Interview</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="offer filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">1</strong>
+                                                        <span class="stage-label">Offer</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="hired">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Hired</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-footer">
+                                        <span class="text-muted published-info"><i class="fa fa-check-circle text-success m-r-5"></i>Published to your <a href="pages-404.html" target="_blank">Careers Site</a> and <a href="jobs-edit-promote.html">10 free</a> job boards</span>
+                                        <span class="text-muted pull-right">Candidates: Total 38 &middot; In Pipeline: 21</span>
+                                    </div>
+                                </li>
+                                <li class="job">
+                                    <div class="job-header clearfix">
+                                        <h4 class="job-title pull-left">
+                                            <i class="fa fa-bookmark pin text-primary"></i>
+                                            <a href="#">Hotel / Support Assistant</a>
+                                            <span class="job-meta">
+                                                <span class="department">Operational Support</span> &middot;
+                                                <span class="location">London, United Kingdom</span>
+                                            </span>
+                                        </h4>
+                                        <div class="btn-actions pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-cog"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#">Edit</a></li>
+                                                    <li><a href="#">Remove Bookmark</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Publish</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages">
+                                        <ul>
+                                            <li class="sourced filled cancelled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">13</strong>
+                                                        <span class="stage-label">Sourced</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="applied filled cancelled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">8</strong>
+                                                        <span class="stage-label">Applied</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="phone-screen filled cancelled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">6</strong>
+                                                        <span class="stage-label">Phone Screen</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="interview">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Interview</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="offer">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Offer</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="hired">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Hired</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-footer">
+                                        <span class="text-muted published-info"><i class="fa fa-times-circle text-danger m-r-5"></i>This job was cancelled</span>
+                                        <span class="text-muted pull-right">Last modified 8 day ago</span>
+                                    </div>
+                                </li>
+                                <li class="job">
+                                    <div class="job-header clearfix">
+                                        <h4 class="job-title pull-left">
+                                            <i class="fa fa-bookmark-o pin"></i>
+                                            <a href="#l">Accounts Payable Administrator</a>
+                                            <span class="job-meta">
+                                                <span class="department">Non-Clinical</span> &middot;
+                                                <span class="location">Reading, United Kingdom</span>
+                                            </span>
+                                        </h4>
+                                        <div class="btn-actions pull-right">
+                                            <button type="button" class="btn btn-success">
+                                                Publish
+                                            </button>
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-cog"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#">Edit</a></li>
+                                                    <li><a href="#">Bookmark</a></li>
+                                                    <li><a href="#">Promote on Job Boards</a></li>
+                                                    <li><a href="#">Refer Candidates</a></li>
+                                                    <li><a href="#">Upload Candidates</a></li>
+                                                    <li><a href="#">View Reports</a></li>
+                                                    <li><a href="#">Copy</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Publish</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages">
+                                        <ul>
+                                            <li class="sourced filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">5</strong>
+                                                        <span class="stage-label">Sourced</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="applied">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Applied</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="phone-screen">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Phone Screen</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="interview">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Interview</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="offer">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Offer</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="hired">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">0</strong>
+                                                        <span class="stage-label">Hired</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-footer">
+                                        <span class="text-muted published-info"><i class="fa fa-times-circle text-danger m-r-5"></i>This job is not published on your careers site or any job boards</span>
+                                        <span class="text-muted pull-right">Candidates: Total 2 &middot; In Pipeline: 0</span>
+                                    </div>
+                                </li>
+                                <li class="job">
+                                    <div class="job-header clearfix">
+                                        <h4 class="job-title pull-left">
+                                            <i class="fa fa-bookmark-o pin"></i>
+                                            <a href="#">Radiographer</a>
+                                            <span class="job-meta">
+                                                <span class="department">Clinical</span> &middot;
+                                                <span class="location">London, United Kingdom</span>
+                                            </span>
+                                        </h4>
+                                        <div class="btn-actions pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default dropdown-toggle waves-effect" data-toggle="dropdown" aria-expanded="false">
+                                                    <i class="fa fa-cog"></i>
+                                                    <b class="caret"></b>
+                                                </button>
+                                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                                                    <li><a href="#">View</a></li>
+                                                    <li><a href="#">Refer Candidates</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                    <li><a href="#">Copy Job</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="stages">
+                                        <ul>
+                                            <li class="sourced filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">39</strong>
+                                                        <span class="stage-label">Sourced</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="applied filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">11</strong>
+                                                        <span class="stage-label">Applied</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="phone-screen filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">6</strong>
+                                                        <span class="stage-label">Phone Screen</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="interview filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">4</strong>
+                                                        <span class="stage-label">Interview</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="offer filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">2</strong>
+                                                        <span class="stage-label">Offer</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="hired filled">
+                                                <div class="stage-inner">
+                                                    <a class="stage" href="#">
+                                                        <strong class="stage-number">1</strong>
+                                                        <span class="stage-label">Hired</span>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="job-footer">
+                                        <span class="text-muted published-info"><i class="fa fa-check-circle text-success m-r-5"></i>This job is closed</span>
+                                        <span class="text-muted pull-right">Position filled on August 4, 2016</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="m-t-20 m-b-20 text-center">
+                                <a href="#" class="btn btn-default waves-effect btn-sm">Load more...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="footer text-right">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                ©2016 TalentPath. All rights reserved.
+                            </div>
+                            <div class="col-xs-6">
+                                <ul class="pull-right list-inline m-b-0">
+                                    <li>
+                                        <a href="pages-404.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Help</a>
+                                    </li>
+                                    <li>
+                                        <a href="pages-404.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    </footeooter>
+            </div>
+        </div>
+
+        <!-- Js Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/detect.js"></script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/jquery.blockUI.js"></script>
+        <script src="assets/js/waves.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.nicescroll.js"></script>
+        <script src="assets/js/jquery.scrollTo.min.js"></script>
+        <script src="assets/plugins/notifyjs/dist/notify.min.js"></script>
+        <script src="assets/plugins/notifications/notify-metro.js"></script>
+        <script src="assets/js/jquery.core.js"></script>
+        <script src="assets/js/jquery.app.js"></script>
+    </body>
+
+</html>

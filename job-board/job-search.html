@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Find the job that's right for you. Use TalentScout's resources to create an awesome CV, search for jobs, prepare for interviews, and launch your career.">
+        <meta name="keywords" content="job, jobs, job sites, job vacancies, find a job, search jobs, CV tips, job search engines, temp jobs, part-time jobs, contractor jobs">
+        <meta name="author" content="Webfinity">
+
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <title>TalentScout | Find a job</title>
+
+        <!-- Google Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Fonts -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/pe-icon-7-stroke.css" rel="stylesheet">
+
+        <!-- Custom styles for this site -->
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/custom.css" rel="stylesheet">
+        <link href="css/forms.css" rel="stylesheet">
+        <link href="css/colors/default.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body data-spy="scroll" data-target="#navbar-menu">
+
+        <!-- NAVIGATION -->
+        <div class="navbar navbar-custom sticky" role="navigation" id="sticky-nav">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- Responsive menu button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- LOGO -->
+                    <a class="navbar-brand logo" href="index.html">TalentScout</a>
+                </div>
+
+                <!-- Top Menu (Left) -->
+                <div class="navbar-collapse collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav nav-custom-left">
+                        <li>
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li class="active">
+                            <a href="job-search.html" class="nav-link">Find Jobs</a>
+                        </li>
+                        <li>
+                            <a href="add-resume.html" class="nav-link">Post Resume</a>
+                        </li>
+                        <li>
+                            <a href="career-advice.html" class="nav-link">Career Advice</a>
+                        </li>
+                        <li>
+                            <a href="browse-companies.html" class="nav-link">Company Profiles</a>
+                        </li>
+                    </ul>
+
+                    <!-- Top Menu (Right) -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">Sign in</a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn btn-white-fill navbar-btn">Sign up for Free</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- END NAVIGATION -->
+
+        <!-- ADVANCED SEARCH -->
+        <section class="form-component" style="padding-top: 100px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Find a job</h2>
+                    </div>
+                </div>
+                <form action="browse-jobs.html" method="post">
+                    <section class="row">
+                        <div class="col-md-3 description">
+                            <h3>Keywords</h3>
+                            <p>If the job title or description contains any of these words</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <label class="control-label" for="all-words">With <strong>all</strong> of these words</label>
+                                <input class="form-control" placeholder="Enter keywords" type="text" id="all-words" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="exact-words">With the <strong>exact phrase</strong></label>
+                                <input class="form-control" placeholder="Enter keywords" type="text" id="exact-words" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="one-word-at-least">With <strong>at least one</strong> of these words</label>
+                                <input class="form-control" placeholder="Enter keywords" type="text" id="one-word-at-least" />
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-md-3 description">
+                            <h3>Locations</h3>
+                            <p>Within a certain distance of a city or postcode</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <label class="control-label" for="location">Town, City or Postcode</label>
+                                <input class="form-control" placeholder="E.g. London, SW1" type="text" id="location" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="radius"></label>
+                                <select class="form-control mx-w-300" id="radius">
+                                    <option value="0">Only in</option>
+                                    <option value="5">Within 5 miles</option>
+                                    <option value="10">Within 10 miles</option>
+                                    <option value="15">Within 15 miles</option>
+                                    <option value="25" selected="selected"Within 25 miles</option>
+                                    <option value="50">Within 50 miles</option>
+                                    <option value="100">within 100 miles</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-md-3 description">
+                            <h3>Job Title or Company</h3>
+                            <p>Searching for a certain job title or want to work for a specific company</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <label class="control-label" for="job-title">Job Title</label>
+                                <input class="form-control" placeholder="E.g. .NET Team Leader, Pre-sales engineer" type="text" id="job-title" />
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="company-name">Company Name</label>
+                                <input class="form-control" placeholder="E.g. Acme Computers, Microsoft" type="text" id="company-name" />
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-md-3 description">
+                            <h3>Job Type</h3>
+                            <p>The type of job are you looking for</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group clearfix">
+                                <label class="control-label" for="job-type">Job Type</label><br>
+                                <div class="moreoptions">
+                                    <div class="checkbox checkbox-primary">
+                                        <input type="checkbox" name="" value="1">
+                                        <label for="">Permanent</label>
+                                    </div>
+                                </div>
+                                <div class="moreoptions">
+                                    <div class="checkbox checkbox-primary">
+                                        <input type="checkbox" name="" value="1">
+                                        <label for="">Contract</label>
+                                    </div>
+                                </div>
+                                <div class="moreoptions">
+                                    <div class="checkbox checkbox-primary">
+                                        <input type="checkbox" name="" value="1">
+                                        <label for="">Temporary</label>
+                                    </div>
+                                </div>
+                                <div class="moreoptions">
+                                    <div class="checkbox checkbox-primary">
+                                        <input type="checkbox" name="" value="1">
+                                        <label for="">Full-Time</label>
+                                    </div>
+                                </div>
+                                <div class="moreoptions">
+                                    <div class="checkbox checkbox-primary">
+                                        <input type="checkbox" name="" value="1">
+                                        <label for="">Part-Time</label>
+                                    </div>
+                                </div>
+                                <div class="moreoptions">
+                                    <div class="checkbox checkbox-primary">
+                                        <input type="checkbox" name="" value="1">
+                                        <label for="">Volunteer</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-inline">
+                                <label class="control-label" for="salary-min">Salary Range</label><br>
+                                <select class="form-control mn-w-200" id="salary-min">
+                                    <option value="">Any min salary</option>
+                                    <option value="8000">£8,000 per annum</option>
+                                    <option value="10000">£10,000 per annum</option>
+                                    <option value="12000">£12,000 per annum</option>
+                                    <option value="15000">£15,000 per annum</option>
+                                    <option value="17000">£17,000 per annum</option>
+                                    <option value="20000">£20,000 per annum</option>
+                                    <option value="25000">£25,000 per annum</option>
+                                    <option value="30000">£30,000 per annum</option>
+                                    <option value="35000">£35,000 per annum</option>
+                                    <option value="40000">£40,000 per annum</option>
+                                    <option value="45000">£45,000 per annum</option>
+                                    <option value="50000">£50,000 per annum</option>
+                                    <option value="60000">£60,000 per annum</option>
+                                    <option value="70000">£70,000 per annum</option>
+                                    <option value="80000">£80,000 per annum</option>
+                                    <option value="90000">£90,000 per annum</option>
+                                    <option value="100000">£100,000 per annum</option>
+                                    <option value="110000">£110,000 per annum</option>
+                                    <option value="120000">£120,000 per annum</option>
+                                    <option value="130000">£130,000 per annum</option>
+                                    <option value="140000">£140,000 per annum</option>
+                                    <option value="150000">£150,000 per annum</option>
+                                    <option value="160000">£160,000 per annum</option>
+                                    <option value="170000">£170,000 per annum</option>
+                                    <option value="180000">£180,000 per annum</option>
+                                    <option value="190000">£190,000 per annum</option>
+                                </select>
+                                <span class="or-separator">to</span>
+                                <select class="form-control mn-w-200" id="salary-max">
+                                    <option value="">Any max salary</option>
+                                    <option value="9999">£9,999 per annum</option>
+                                    <option value="11999">£11,999 per annum</option>
+                                    <option value="13999">£13,999 per annum</option>
+                                    <option value="14999">£14,999 per annum</option>
+                                    <option value="16999">£16,999 per annum</option>
+                                    <option value="18999">£18,999 per annum</option>
+                                    <option value="19999">£19,999 per annum</option>
+                                    <option value="21999">£21,999 per annum</option>
+                                    <option value="24999">£24,999 per annum</option>
+                                    <option value="27999">£27,999 per annum</option>
+                                    <option value="29999">£29,999 per annum</option>
+                                    <option value="32999">£32,999 per annum</option>
+                                    <option value="34999">£34,999 per annum</option>
+                                    <option value="39999">£39,999 per annum</option>
+                                    <option value="44999">£44,999 per annum</option>
+                                    <option value="49999">£49,999 per annum</option>
+                                    <option value="54999">£54,999 per annum</option>
+                                    <option value="59999">£59,999 per annum</option>
+                                    <option value="64999">£64,999 per annum</option>
+                                    <option value="69999">£69,999 per annum</option>
+                                    <option value="74999">£74,999 per annum</option>
+                                    <option value="79999">£79,999 per annum</option>
+                                    <option value="84999">£84,999 per annum</option>
+                                    <option value="89999">£89,999 per annum</option>
+                                    <option value="99999">£99,999 per annum</option>
+                                    <option value="109999">£109,999 per annum</option>
+                                    <option value="119999">£119,999 per annum</option>
+                                    <option value="129999">£129,999 per annum</option>
+                                    <option value="139999">£139,999 per annum</option>
+                                    <option value="149999">£149,999 per annum</option>
+                                    <option value="159999">£159,999 per annum</option>
+                                    <option value="169999">£169,999 per annum</option>
+                                    <option value="179999">£179,999 per annum</option>
+                                    <option value="189999">£189,999 per annum</option>
+                                    <option value="200000">£200,000 per annum</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="col-md-3 description">
+                            <h3>Posted</h3>
+                            <p>When the job was posted</p>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="form-group">
+                                <label class="control-label" for="posted-at">Posting Date</label>
+                                <select class="form-control mx-w-300" id="posted-at">
+                                    <option value="-1">Any date</option>
+                                    <option value="0">Today</option>
+                                    <option value="1">Yesterday</option>
+                                    <option value="3">Last 3 days</option>
+                                    <option value="7">Last 7 Days</option>
+                                    <option value="14">Last 14 Days</option>
+                                    <option value="30">Last Month</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="closing">
+                        <input type="submit" name="commit" value="Find Jobs" class="btn btn-lg btn-custom">
+                    </section>
+                </form>
+            </div>
+        </section>
+        <!-- ADVANCED SEARCH -->
+
+        <!-- FOOTER -->
+        <footer class="section bg-gray footer" id="footer">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Companies -->
+                    <div class="col-md-3 col-sm-6">
+                        <h5>TalentScout</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Post Jobs</a></li>
+                            <li><a href="#">Search Resumes</a></li>
+                            <li><a href="#">Advertise</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="col-md-3 col-sm-6">
+                        <h5>Social</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="col-md-3 col-sm-6">
+                        <h5>Support</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Help and Support</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-md-3 col-sm-6">
+                        <h5>Contact</h5>
+                        <address>
+                            795 Folsom Ave, Suite 600<br>
+                            San Francisco, CA 94107<br>
+                            <abbr title="Phone">P:</abbr> (123) 456-7890<br/>
+                            E: <a href="mailto:#">email@email.com</a>
+                        </address>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="row" id="copyright">
+                    <div class="col-sm-12">
+                        <div class="footer-alt text-center">
+                            <p class="text-muted m-b-0">2016© TalentSout. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+
+        <!-- BACK TO TOP -->
+        <a href="#" class="back-to-top" id="back-to-top"><i class="fa fa-chevron-up"> </i> </a>
+
+        <!-- JS placed at the end of the document so the pages load faster -->
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- JS plugins and dependencies -->
+        <script type="text/javascript" src="js/jquery.easing.1.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery.sticky.js"></script>
+        <script type="text/javascript" src="js/jquery.ajaxchimp.js"></script>
+
+        <!-- Common script for all pages -->
+        <script src="js/jquery.app.js"></script>
+
+    </body>
+
+</html>
